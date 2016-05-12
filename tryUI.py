@@ -1,8 +1,9 @@
 from tkinter import *
 
+
 root = Tk()
 
-mainFrame = Frame(root, width=250, height=550, bd=5)
+mainFrame = Frame(root,width=500,height=100,bd=5)
 
 nameLabel = Label(mainFrame, text='ФИО клиента:')
 
@@ -16,7 +17,9 @@ emailLabel = Label(mainFrame, text='E-mail клиента:')
 
 emailEntry = Entry(mainFrame)
 
-'''mainFrame.grid()
+buttonSend = Button(mainFrame, text='Send')
+
+'''mainFrame.grid(row=0,column=0,rowspan=6,columnspan=2)
 
 nameLabel.grid(row=0,column=0)
 
@@ -43,5 +46,7 @@ siteEntry.pack()
 emailLabel.pack()
 
 emailEntry.pack()
+
+buttonSend.pack()
 
 root.mainloop()

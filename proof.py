@@ -1,5 +1,6 @@
 import requests
 import urllib.parse
+import time
 
 methods = ('reindex_site', 'get_index')
 
@@ -13,20 +14,26 @@ paramsForReIndex = {
 	'mode': 'site',
 	'login': 'dmitriy@biksileev.ru',
 	'password': 'NokiaN9777',
-	'url': sites[0],
+	'url': sites[1],
 	'target': 'reindex',
 	'version_id': '1',
 	'count_page': '30'
 }
 
 firstResponse = requests.get(BASE_URL, params=paramsForReIndex)
-firstJson = response.json()
+firstJson = firstResponse.json()
 
 paramsForGetIndex = {
 	'method': methods[1],
 	'login': 'dmitriy@biksileev.ru',
 	'password': 'NokiaN9777',
-	'url': sites[0],
+	'url': paramsForReIndex['url'],
 	'version_id': firstJson['version_id']
 }
 
+time.sleep(600)
+
+secondResponse = requests.get(BASE_URL, params=paramsForGetIndex)
+secondJson = secondResponse.json()
+
+print(secondJson)

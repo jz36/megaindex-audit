@@ -1,5 +1,6 @@
 from smtplib import SMTP_SSL
 from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders as Encoders
 import os
@@ -13,12 +14,15 @@ part = MIMEBase('application', "octet-stream")
 part.set_payload(open(filepath,"rb").read() )
 Encoders.encode_base64(part)
 part.add_header('Content-Disposition', 'attachment; filename="%s"' % basename)
+part2 = MIMEText('how are you?', 'plain')
 
 # Compose message
 msg = MIMEMultipart()
 msg['From'] = address
 msg['To'] = 'texpomruu@yandex.ru'
+msg['Subject'] = 'proof'
 
+msg.attach(part2)
 msg.attach(part)
 
 # Send mail

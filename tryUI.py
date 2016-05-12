@@ -1,5 +1,42 @@
 from tkinter import *
+import requests
+import urllib.parse
+import time
 
+def idexSite(site):
+	methods = ('reindex_site', 'get_index')
+
+	BASE_URL = 'http://api.megaindex.ru/?'
+
+	paramsForReIndex = {
+		'method': methods[0],
+		'output': 'json',
+		'mode': 'site',
+		'login': 'dmitriy@biksileev.ru',
+		'password': 'NokiaN9777',
+		'url': site,
+		'target': 'reindex',
+		'version_id': '1',
+		'count_page': '30'
+	}
+
+	firstResponse = requests.get(BASE_URL, params=paramsForReIndex)
+	firstJson = firstResponse.json()
+
+	paramsForGetIndex = {
+		'method': methods[1],
+		'login': 'dmitriy@biksileev.ru',
+		'password': 'NokiaN9777',
+		'url': site,
+		'version_id': firstJson['version_id']
+	}
+
+	time.sleep(600)
+
+	secondResponse = requests.get(BASE_URL, params=paramsForGetIndex)
+	secondJson = secondResponse.json()
+
+	return secondJson
 
 root = Tk()
 

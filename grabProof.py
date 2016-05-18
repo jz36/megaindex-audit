@@ -1,5 +1,5 @@
 from grab import Grab
-import ipdb
+from ipdb import set_trace
 
 g = Grab()
 
@@ -10,51 +10,62 @@ g.doc.set_input('password','biksileev')
 g.doc.submit()
 g.go('https://a.pr-cy.ru/biksileev.ru')
 
-newList = g.css_list('.row .col-sm-8')
+newList = g.css_list('.row')
 
+i = 0
+
+for name in newList[5:]:
+	try:
+		'''if 'Системы статистики' in name.cssselect('.info-test')[0].text:
+			set_trace()'''
+		if not('Обратные ссылки' in name.cssselect('.info-test')[0].text):
+			print(name.cssselect('.info-test')[0].text, end=' ')
+			try:
+				newVar = name.cssselect('.content-test')[0].text
+				newVar = newVar.replace('\n','')
+				newVar = newVar.replace('\t','')
+				newVar = newVar.replace('\r','')
+				if len(newVar) > 0:
+					print(newVar)
+				else:
+					try:
+						newVar2 = name.cssselect('.content-test')[0].cssselect('a')[0].text
+						newVar2 = newVar.replace('\n','')
+						newVar2 = newVar.replace('\t','')
+						newVar2 = newVar.replace('\r','')
+					except:
+						try:
+							print(name.cssselect('.content-test')[0].cssselect('p')[0].text, end=' ')
+						except:
+							try:
+								print(name.cssselect('.content-test')[0].cssselect('p')[0].text, end=' ')
+							except:
+								try:
+									print(name.cssselect('.content-test')[0].cssselect('.progress-info .progress-info')[0].text)
+								except:
+									try:
+										newList2 = name.cssselect('.content-test')[0].cssselect('span')
+										for analytics in newList2:
+											print(analytics.text, end=' ')
+									except:
+										pass
+					'''if len(newVar2) > 0:
+							print(newVar2)
+						else:
+							print(name.cssselect('.content-test')[0].cssselect('p')[0].text, end=' ')'''
+			except:
+				pass
+		i += 1
+		print()
+	except:
+		pass
+print(i)
+'''
 for name in newList:
 	newVar = name.text
+	set_trace()
 	newVar = newVar.replace('\n','')
 	newVar = newVar.replace('\t','')
 	newVar = newVar.replace('\r','')
-	if len(newVar) == 0:
-		try:
-			if len(name.cssselect('a')) != 0:
-				newVar2 = name.cssselect('a')[0].text
-			elif len(name.cssselect('.progress-info')) != 0:
-				newVar2 = name.cssselect('.progress-info')[0].text
-			elif len(name.cssselect('p')) != 0:
-				newVar2 = name.cssselect('p')[0].text
-			elif len(name.cssselect('.social-group .info')):
-				ipdb.set_trace()
-				newVar2 = name.cssselect('.social-group .info')[0].cssselect('a b')[0].text
-				newVar2 = newVar2.replace('\n','')
-				newVar2 = newVar2.replace('\t','')
-				newVar2 = newVar2.replace('\r','')
-				print (newVar2)
-				newVar2 = name.cssselect('.social-group .info')[0].cssselect('p')[0].text
-				newVar2 = newVar2.replace('\n','')
-				newVar2 = newVar2.replace('\t','')
-				newVar2 = newVar2.replace('\r','')
-				if len(newVar2) == 0:
-					newVar2 = name.cssselect('.social-group .info')[0].cssselect('p span')[0].text
-					newVar2 = newVar2.replace('\n','')
-					newVar2 = newVar2.replace('\t','')
-					newVar2 = newVar2.replace('\r','')
-					print(newVar2)
-					newVar2 = name.cssselect('.social-group .info')[0].cssselect('p span')[1].text
-					newVar2 = newVar2.replace('\n','')
-					newVar2 = newVar2.replace('\t','')
-					newVar2 = newVar2.replace('\r','')
-				print (newVar2)
-
-
-			newVar2 = newVar2.replace('\n','')
-			newVar2 = newVar2.replace('\t','')
-			newVar2 = newVar2.replace('\r','')
-			print(newVar2)
-		except:
-			print(' ')
-	else:
-		print(newVar)
-
+	print(newVar)
+'''

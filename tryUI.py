@@ -2,8 +2,15 @@ from tkinter import *
 import requests
 import urllib.parse
 import time
+from smtplib import SMTP_SSL
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders as Encoders
+import os
+import pdb
 
-def idexSite(site):
+def indexSite(site, customerEmail, customerFIO):
 	methods = ('reindex_site', 'get_index')
 
 	BASE_URL = 'http://api.megaindex.ru/?'
@@ -20,6 +27,8 @@ def idexSite(site):
 		'count_page': '30'
 	}
 
+	#pdb.set_trace()
+
 	firstResponse = requests.get(BASE_URL, params=paramsForReIndex)
 	firstJson = firstResponse.json()
 
@@ -31,12 +40,57 @@ def idexSite(site):
 		'version_id': firstJson['version_id']
 	}
 
-	time.sleep(600)
+	time.sleep(300)
 
 	secondResponse = requests.get(BASE_URL, params=paramsForGetIndex)
 	secondJson = secondResponse.json()
 
-	return secondJson
+	f = open('textJson.txt', 'w')
+	f.write(str(secondJson))
+	f.close()
+
+	subject = 'Аудит сайта ' + site
+
+	message = "Добрый день, " + customerFIO + ". Провели аудит вашего сайта."
+
+	sendMail(customerEmail, subject, message)
+
+def sendMail(emailTo, subject, msgText):
+	filepath = "/home/jz36/Документы/chess/bBishop.png"
+	basename = os.path.basename(filepath)
+	address = "neo@biksileev.ru"
+
+	# Compose attachment
+	part = MIMEBase('application', "octet-stream")
+	part.set_payload(open(filepath,"rb").read() )
+	Encoders.encode_base64(part)
+	part.add_header('Content-Disposition', 'attachment; filename="%s"' % basename)
+	part2 = MIMEText(msgText, 'plain')
+
+	# Compose message
+	msg = MIMEMultipart()
+	msg['From'] = address
+	msg['To'] = emailTo
+	msg['Subject'] = subject
+
+	msg.attach(part2)
+	msg.attach(part)
+
+	# Send mail
+	smtp = SMTP_SSL()
+	smtp.connect('smtp.yandex.ru')
+	smtp.login(address, 'rjcjq12utybq')
+	smtp.sendmail(address, emailTo, msg.as_string())
+	smtp.quit()
+
+def proof(event):
+	#pdb.set_trace()
+	print('Start work!')
+	indexSite(siteEntry.get(), emailEntry.get(), nameEntry.get())
+	print('Done!')
+	siteEntry.delete(0, len(siteEntry.get()))
+	emailEntry.delete(0, len(emailEntry.get()))
+	nameEntry.delete(0, len(nameEntry.get()))
 
 root = Tk()
 
@@ -69,6 +123,8 @@ siteEntry.grid(row=3,column=0, columnspan=2)
 emailLabel.grid(row=4,column=0)
 
 emailEntry.grid(row=5,column=0, columnspan=2)'''
+
+buttonSend.bind("<Button-1>", proof)
 
 mainFrame.pack()
 

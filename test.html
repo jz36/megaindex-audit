@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app='IdApp'>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="/assets/images/favicon.png" />
+	<title>PR-CY - вход на сайт</title>
+	<link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+<body ng-controller="RootCtrl">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-74406780-1', 'auto', 'ExtendedTracker');
+    	ga('ExtendedTracker.send', 'pageview');
+</script>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<img src="/assets/images/logo-id.svg" alt="ID">
+				</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+					<span class="sr-only">Меню</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="main-nav">
+				<ul class="nav navbar-nav">
+					
+					<li class="dropdown dropdown-bar">
+						<a href="#" class="dropdown-toggle pr-cy-blue" data-toggle="dropdown"><i class="fa fa-bars fa-xs"></i></a>
+						<ul class="dropdown-menu">
+							<li role="presentation">
+								<a href="http://pr-cy.ru/"><img src="/assets/images/slidebar/prcy.svg"> Мой PR-CY</a>
+							</li>
+							<li role="presentation">
+								<a href="https://sites.pr-cy.ru/"><img src="/assets/images/slidebar/sites.svg"> Моя панель сайтов</a>
+							</li>
+							<li role="presentation">
+								<a href="https://line.pr-cy.ru/"><img src="/assets/images/slidebar/line.svg"> Моя панель позиций</a>
+							</li>
+														<li role="presentation">
+								<a href="https://audit.pr-cy.ru/"><img src="/assets/images/slidebar/audit.svg"> Мои аудиты сайтов</a>
+							</li>
+							<li role="presentation">
+								<a href="https://a.pr-cy.ru/"><img src="/assets/images/slidebar/analysis.svg"> Мой анализ сайтов</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="/">Личный кабинет</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-user text-white"></i></span> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="/signup/login/?r=%2Fsignup%2Flogin%2F" rel="nofollow">Войти</a></li>
+								<li><a href="/signup/registration/" rel="nofollow">Зарегистрироваться</a></li>
+							</ul>
+						</li>
+									</ul>
+			</div>
+		</div>
+	</nav>
+
+<div class="container main-content">
+	<div ng-init='alertService.init([])'>
+		<alert
+			ng-cloak
+			ng-repeat="alert in alerts"
+			type="[[ alert.type ]]"
+			close="alertService.close($index)"
+		>
+			<div ng-bind-html="alert.msg"></div>
+		</alert>
+	</div>
+	
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="login-head">
+			<a href="/signup/registration/" class="padding-top-10 pull-right">Зарегистрироваться</a>
+			<b class="h1">Вход на сайт</b>
+		</div>
+		<div class="gray-form">
+			<div class="row">
+				<div class="col-sm-6">
+					<form role="form" method="post" action="/signup/login"
+						name="loginForm"
+						novalidate="novalidate"
+					>
+						<div class="form-group required" ng-class="{'has-error': loginForm.login_email.$invalid && !loginForm.login_email.$pristine}">
+							<input type="text" class="form-control input-md" id="login_email" name="login_email" placeholder="Ваш логин или email" value=""
+								ng-init="loginData.login_email = ''"
+								ng-model="loginData.login_email"
+								required
+								autofillable
+							>
+						</div>
+						<div class="form-group required" ng-class="{'has-error': loginForm.password.$invalid && !loginForm.password.$pristine}">
+							<div class="input-group">
+								<input type="password" name="password" class="form-control input-md" id="password" placeholder="Ваш пароль"
+									ng-model="loginData.password"
+									required
+									autofillable
+								>
+								<span class="input-group-btn">
+									<a href="/signup/restore/" class="btn btn-default btn-md" title="Забыли пароль?"><i class="fa fa-question fa-xs"></i></a>
+								</span>
+							</div>
+						</div>
+												<input type="hidden" name="7XU57DvNpZjrVMf9" value="857bb60fcefb75ec172133fc02f5437f" />
+						<button type="submit" class="btn btn-block btn-primary btn-md" ng-disabled="loginForm.$invalid">Войти</button>
+					</form>
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<div class="oauth-info">Войдите на сайт без регистрации всего за один клик.</div>
+
+<table class="oauth-btn">
+	<tbody>
+		<tr>
+			<td width="50%"><a href="/signup/oauth2Login/Vkontakte" onclick="yaCounter26848893.reachGoal('login-vk'); return true;" class="btn btn-default btn-block btn-border"><i class="fa fa-vk vk fa-xs"></i> ВКонтакте</a></td>
+			<td width="50%"><a href="/signup/oauth2Login/Facebook" onclick="yaCounter26848893.reachGoal('login-fb'); return true;" class="btn btn-default btn-block btn-border"><i class="fa fa-facebook fa-xs fb"></i> Facebook</a></td>
+		</tr>
+		<tr>
+			<td><a href="/signup/oauth2Login/Yandex" onclick="yaCounter26848893.reachGoal('login-yandex'); return true;" class="btn btn-default btn-block btn-border"><i class="fa fa-yahoo red fa-xs"></i> <span class="red">Я</span><span class="black">ндекс</span></a></td>
+			<td><a href="/signup/oauth2Login/Google" onclick="yaCounter26848893.reachGoal('login-google'); return true;" class="btn btn-default btn-block btn-border"><i class="fa fa-google blue"></i> <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></a></td>
+		</tr>
+	</tbody>
+</table>				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+</div>
+
+	<div class="hide" style="position:absolute; bottom:0; right:0">
+					<!--LiveInternet counter--><script type="text/javascript"><!--
+			document.write("<a href='http://www.liveinternet.ru/click' "+
+			"target=_blank><img src='https://counter.yadro.ru/hit?t26.6;r"+
+			escape(document.referrer)+((typeof(screen)=="undefined")?"":
+			";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+			screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+			";"+Math.random()+
+			"' alt='' title='LiveInternet: показано число посетителей за"+
+			" сегодня' "+
+			"border=0 width=1 height=1 style='visibility:hidden'><\/a>")//--></script><!--/LiveInternet-->
+
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-8243339-1', 'auto', {'allowLinker': true});
+			ga('require', 'linker');
+			ga('linker:autoLink', ['line.pr-cy.ru'] );
+			  ga('require', 'displayfeatures');
+			  ga('send', 'pageview');
+
+			</script>
+
+			<!-- Yandex.Metrika LINE!!!! -->
+			<script type="text/javascript">
+			(function (d, w, c) {
+			    (w[c] = w[c] || []).push(function() {
+			        try {
+			            w.yaCounter29050545 = new Ya.Metrika({id:29050545,
+			                    webvisor:true,
+			                    clickmap:true,
+			                    trackLinks:true,
+			                    accurateTrackBounce:true,
+			                    trackHash:true,
+			                    ut:"noindex"});
+			        } catch(e) { }
+			    });
+
+			    var n = d.getElementsByTagName("script")[0],
+			        s = d.createElement("script"),
+			        f = function () { n.parentNode.insertBefore(s, n); };
+			    s.type = "text/javascript";
+			    s.async = true;
+			    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+			    if (w.opera == "[object Opera]") {
+			        d.addEventListener("DOMContentLoaded", f, false);
+			    } else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+			</script>
+			<noscript><div><img src="//mc.yandex.ru/watch/29050545?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+			<!-- /Yandex.Metrika counter -->
+
+			<!-- Yandex.Metrika counter -->
+			<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter26848893 = new Ya.Metrika({id:26848893,
+								webvisor:true,
+								clickmap:true,
+								trackLinks:true,
+								accurateTrackBounce:true,
+								trackHash:true});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+			</script>
+			<noscript><div><img src="//mc.yandex.ru/watch/26848893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+			<!-- /Yandex.Metrika counter -->
+			</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-6">
+					© PR-CY, 2006—2016<br>
+					Личный кабинет веб-мастера				</div>
+				<div class="col-sm-9 col-xs-6">
+					<ul class="list-inline pull-right">
+						<li><a href="http://pr-cy.ru/disclaimer/">Соглашение</a></li>
+						<li><a href="http://pr-cy.ru/support/">Поддержка</a></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		var useSsl			 = 1;
+		var webHost			 = 'id.pr-cy.ru';
+		var fsHost			 = 's.pr-cy.ru';
+		var currentLanguage	 = 'ru';
+		var defaultLanguage	 = 'ru';
+	</script>
+			<script src="/assets/js/main.min.js"></script>
+		<script src="/assets/bower_components/angular-i18n/angular-locale_ru-ru.js"></script>
+	
+</body>
+</html>

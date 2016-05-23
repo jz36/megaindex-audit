@@ -1,0 +1,3622 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app='AnalysisApp'>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+	<meta name="description" content="Анализ сайта biksileev.ru: Индексация, Трафик, Ключевые слова, Социальные сети. Подробная информация.">
+	<meta property="og:title" content="Подробный анализ сайта — biksileev.ru">
+	<meta property="og:description" content="Анализ сайта biksileev.ru: Индексация, Трафик, Ключевые слова, Социальные сети. Подробная информация.">
+			<meta property="og:image" content="//s3-eu-west-1.amazonaws.com/s3.pr-cy.ru/desktop/d06ca67d9ab75c4db4d3783c435a7ed4.png">
+		<meta property="og:type" content="website">
+	<meta property="og:url" content= "https://a.pr-cy.ru/biksileev.ru/">
+
+
+		
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon16x16.png" sizes="16x16" />
+		<meta name="application-name" content="Избранные сайты"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="/assets/img/mstile-144x144.png" />
+		<meta name="referrer" content="unsafe-url">
+		
+
+		<title>Анализ cайта biksileev.ru</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css?1462871806">		<link rel="canonical" href="https://a.pr-cy.ru/biksileev.ru/" />
+	</head>
+	<body ng-controller="RootCtrl">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-74406780-1', 'auto', 'ExtendedTracker');
+			
+		ga('ExtendedTracker.set', 'title', 'Анализ сайта');
+	ga('ExtendedTracker.set', 'page', '/*/');
+	
+						ga('ExtendedTracker.set', 'userId', '274547');
+						ga('ExtendedTracker.send', 'pageview');
+		</script>
+		
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">
+							<img src="/assets/img/logo.svg" alt="" />
+						</a>
+						<button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+							<span class="sr-only">Меню</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse" collapse="navCollapsed">
+						<ul class="nav navbar-nav navbar-right">
+															<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="//s.pr-cy.ru/userpics/274547_thumb.png" err-src="/assets/img/no-avatar.svg" class="img-circle navbar-avatar" tooltip-placement="left" tooltip="neoBiksileev">
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="//id.pr-cy.ru">Мой профиль</a></li>
+									<li><a href="//id.pr-cy.ru/user/messages/#/list">Личные сообщения</a></li>
+									<li><a href="//id.pr-cy.ru/user/balance/#/refill">Баланс</a></li>
+									<li class="divider"></li>
+									<li><a href="/signup/logout">Выйти</a></li>
+								</ul>
+								</li>
+													</ul>
+						<ul class="nav navbar-nav">
+							<li><a href="/">Анализ сайта</a></li>
+							<li><a href="/prices/">Тарифы и цены</a></li>
+															<li><a href="/pdf/settings/">Отчеты PDF</a></li>
+																				</ul>
+					</div>
+				</div>
+			</nav>
+		
+		
+		<div class="notify">
+	<div ng-init='alertService.init(null)'>
+		<alert
+			ng-cloak
+			ng-repeat="alert in alerts"
+			type="[[ alert.type ]]"
+			close="alertService.close($index)"
+		>
+			<div ng-bind-html="alert.msg"></div>
+		</alert>
+	</div>
+</div>
+		
+
+<div ng-controller="AnalysisCtrl"
+	ctrl-init='{"domain":"biksileev.ru","dateUpdatedInfo":"\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u043e \u0442\u043e\u043b\u044c\u043a\u043e \u0447\u0442\u043e, \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0435 \u0437\u0430\u0432\u0442\u0440\u0430 \u0432 07:29.","isUpdating":false,"isPdfGenerating":false,"pdfLink":null,"isExpired":false,"isFavorite":false,"isAdvanced":false,"started":{"sec":1463372970,"usec":387000},"tests":[],"allTestsCount":80,"userCanUpdate":true,"userCanForceUpdate":true,"forceUpdatesTooltip":"\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u043e 0 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439 \u0438\u0437 0  \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u0445 \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0442\u0435\u043a\u0443\u0449\u0435\u043c\u0443 \u0442\u0430\u0440\u0438\u0444\u0443","forceUpdatesLimit":"0","forceUpdatesUsed":0,"userCanMakeReport":false,"userHasAdvancedAnalysis":false}'
+>
+	<div ng-cloak ng-show="analysis.isUpdating" id="loading-bar"><div class="bar" ng-style="{width: analysis.progress + '%'}"><div class="peg"></div></div></div>
+	<div ng-cloak ng-show="analysis.isUpdating" id="loading-bar-spinner"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+	<div class="jumbotron-small">
+		<div class="container">
+			<form id="analysis" class="analysis-form">
+	<div class="input-group input-group-lg">
+		<input type="text" class="form-control" placeholder="Введите сайт, например: site.ru" ng-model="analysis.domain" required />
+
+		<span class="input-group-btn">
+			<button ng-click="analyse()" type="submit" class="btn btn-default"><span class="hidden-xs">Анализировать</span><span class="visible-xs-block">GO</span></button>
+		</span>
+	</div>
+	<span class="input-error" ng-cloak ng-show="analysis.isDomainError"><i class="fa fa-times-circle"></i> Неверный формат доменного имени.</span>
+</form>		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+				<!-- social share -->
+				<link rel="stylesheet" href="https://sociale.ru/assets/style-minimal.css">
+				<div class="sharing-buttons" data-url="https://a.pr-cy.ru" data-counters="true">
+					<p>Делитесь сервисом со всеми, кто продвигает сайты:</p>
+					<div class="vkontakte"></div>
+					<div class="facebook"></div>
+					<div class="twitter"></div>
+					<div class="google-plus"></div>
+				</div>
+				<script type="text/javascript" src="https://sociale.ru/assets/share.min.js"></script>
+				<!-- END: social share -->
+									<div class="start-advanced"
+						ng-cloak
+						ng-if="!analysis.isAdvanced"
+					>
+						<button class="btn btn-warning btn-block"
+							ng-controller="AdvancedDomainsCtrl"
+							ng-show="!analysis.userHasAdvancedAnalysis"
+							ng-click="addAdvanced('biksileev.ru', true)"
+						>
+							<i class="fa fa-rocket"></i> Провести расширенный анализ						</button>
+						<a class="btn btn-warning btn-block" href="/advanced/biksileev.ru/"
+							ng-show="analysis.userHasAdvancedAnalysis"
+						>
+							<i class="fa fa-rocket"></i> Перейти к расширенному анализу						</a>
+					</div>
+								<pagemenu affix></pagemenu>
+									<div affix class="slider-before">
+						<script type="text/javascript" id="place-ac5123d274eb8bf8c3f1b741c378155c" src="https://a1.pr-cy.ru/place/get/ac5123d274eb8bf8c3f1b741c378155c?site=biksileev.ru"></script>
+						<script type="text/javascript" id="place-78127a2dd92422f96ae843139706f8fa" src="https://a1.pr-cy.ru/place/get/78127a2dd92422f96ae843139706f8fa?site=biksileev.ru"></script>
+					</div>
+							</div>
+			<div class="col-lg-9" id="analysis" pageitems selector="pageitem" topmargin="20">
+				<div class="row make-signup" ng-if="analysis.isExpired && !analysis.isUpdating && !analysis.userCanUpdate" ng-cloak>
+					<i class="icon icon-uniE785"></i>
+					<div class="content">
+						<h2>Анализ не завершен!</h2>
+						<p class="p-list">Доступ для гостей ограничен. После регистрации будет доступен полный функционал сервиса:</p>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-check green"></i> неограниченное число проверок сайтов;</li>
+							<li><i class="fa-li fa fa-check green"></i> избранные сайты;</li>
+							<li><i class="fa-li fa fa-check green"></i> доступ к более чем 70 тестам анализа.</li>
+						</ul>
+						<a href="/signup/oauthGetLoginUrl?r=%2Fbiksileev.ru%2F" class="btn btn-success">Получить доступ</a>
+					</div>
+				</div>
+				<div class="analysis-head-box">
+					<div class="advanced-domain" ng-cloak ng-show="analysis.isAdvanced" >Расширенный анализ</div>
+					<div class="row content">
+						<div class="col-sm-4">
+							<div class="site-screen hidden-xs" ng-cloak trusted-html="analysis.tests['screenshotDesktop']['view']">
+																		<img ng-src="//s3-eu-west-1.amazonaws.com/s3.pr-cy.ru/desktop/d06ca67d9ab75c4db4d3783c435a7ed4.png" err-src="/assets/img/noscreen.png">
+															</div>
+						</div>
+						<div class="col-sm-8">
+							<h1><a href="http://biksileev.ru" target="_blank" rel="nofollow">biksileev.ru</a></h1>
+							<div class="refresh" ng-cloak ng-show="!analysis.isUpdating">
+								[[ analysis.dateUpdatedInfo ]]
+							</div>
+							<div class="refresh" ng-cloak ng-show="analysis.isUpdating">
+								Обновляется сейчас...							</div>
+							<div class="info-progress" ng-cloak>
+	Оценка сайта – [[ analysis.getTotalScore() ]]%
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" ng-style="{ width: analysis.getTotalScore() + '%' }"></div>
+	</div>
+</div>
+<div class="info-progress-small">
+	<div class="row" ng-cloak>
+		<div class="col-sm-4"
+			ng-click="filterAnalysisResults('success')"
+			ng-class="{
+				'inactive-filter': !analysis.filter.success,
+				'active-filter': analysis.isFilterApplied && analysis.filter.success
+			}"
+		>
+			<span><ng-pluralize count="analysis.counters.success" when="{'0': 'Нет успешных тестов', 'one': '{} успешный тест', 'few': '{} успешных теста', 'many': '{} успешных тестов'}"></ng-pluralize></span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" ng-style="{ width: analysis.getScore('success') + '%' }"></div>
+			</div>
+		</div>
+		<div class="col-sm-4"
+			ng-click="filterAnalysisResults('fail')"
+			ng-class="{
+				'inactive-filter': !analysis.filter.fail,
+				'active-filter': analysis.isFilterApplied && analysis.filter.fail
+			}"
+		>
+			<span><ng-pluralize count="analysis.counters.fail" when="{'0': 'Нет ошибок', 'one': '{} ошибка', 'few': '{} ошибки', 'many': '{} ошибок'}"></ng-pluralize></span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" ng-style="{ width: analysis.getScore('fail') + '%' }"></div>
+			</div>
+		</div>
+		<div class="col-sm-4"
+			ng-click="filterAnalysisResults('info')"
+			ng-class="{
+				'inactive-filter': !analysis.filter.info,
+				'active-filter': analysis.isFilterApplied && analysis.filter.info
+			}"
+		>
+			<span><ng-pluralize count="analysis.counters.info" when="{'0': 'Нет инф. сообщений', 'one': '{} инф. сообщение', 'few': '{} инф. сообщения', 'many': '{} инф. сообщений'}"></ng-pluralize></span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" ng-style="{ width: analysis.getScore('info') + '%' }"></div>
+			</div>
+		</div>
+	</div>
+</div>						</div>
+					</div>
+					<div class="more hidden-xs">
+													<span ng-controller="FavoriteDomainsCtrl">
+								<a ng-cloak ng-show="!analysis.isFavorite" ng-click="analysis.isFavorite = true; addFavorite('biksileev.ru')"><i class="fa fa-star-o"></i> Добавить в избранное</a>
+								<a ng-cloak ng-show="analysis.isFavorite" ng-click="analysis.isFavorite = false; deleteFavorite('biksileev.ru')"><i class="fa fa-star"></i> Удалить из избранного</a>
+							</span>
+							<button
+								ng-cloak
+								ng-show="!analysis.pdfLink"
+								ng-disabled="analysis.isPdfGenerating || analysis.isUpdating || !analysis.userCanMakeReport"
+								ng-click="generatePdf()"
+							>
+								<img class="icon" ng-show="!analysis.isPdfGenerating" src="/assets/img/icon-pdf.svg">
+								<img class="icon fa-spin" ng-show="analysis.isPdfGenerating" src="/assets/img/icon-updating.svg">
+								Создать PDF							</button>
+							<i
+								class="fa fa-question chart ng-scope"
+								ng-cloak
+								ng-if="!analysis.isPdfGenerating && !analysis.userCanMakeReport && !analysis.pdfLink"
+								tooltip="Лимит генерации PDF-отчетов исчерпан"
+								tooltip-placement="top"
+							></i>
+							<a ng-cloak ng-show="!analysis.isPdfGenerating && analysis.pdfLink" ng-href="[[ analysis.pdfLink ]]" target="_blank">
+								<img class="icon" src="/assets/img/icon-save.svg"> Скачать PDF							</a>
+															<button
+									ng-disabled="analysis.isUpdating"
+									ng-click="forceUpdate()"
+									tooltip="[[ analysis.forceUpdatesTooltip ]]"
+								>
+									<i class="fa fa-refresh"></i> Перепроверить								</button>
+																									</div>
+				</div>
+
+									<div class="announce">
+						<div class="row">
+							<div class="col-sm-4">
+								<script type="text/javascript" id="place-3d041f6ee0852bdec0311be7db3fa6de" src="https://a1.pr-cy.ru/place/get/3d041f6ee0852bdec0311be7db3fa6de?site=biksileev.ru"></script>
+							</div>
+							<div class="col-sm-4">
+								<script type="text/javascript" id="place-cdfb6ac89d79e3fc1a674250009b412a" src="https://a1.pr-cy.ru/place/get/cdfb6ac89d79e3fc1a674250009b412a?site=biksileev.ru"></script>
+							</div>
+							<div class="col-sm-4">
+								<script type="text/javascript" id="place-94b1f162fe01cc44e9fc947ca118aca1" src="https://a1.pr-cy.ru/place/get/94b1f162fe01cc44e9fc947ca118aca1?site=biksileev.ru"></script>
+							</div>
+						</div>
+					</div>
+								<div class="events box-analysis" ng-cloak ng-show="analysis.timeline['count'] > 0">
+					<div class="tests-group">
+						<div class="box-title">
+							<h3>Последние события</h3>
+						</div>
+						<div class="box-content" trusted-html="analysis.timeline['view']">
+							<div ng-init="analysis.timeline['count']=0">
+</div>						</div>
+					</div>
+					<div class="more" ng-show="analysis.timeline['count'] > 3">
+						<a ng-click="analysis.timeline['expand'] = !analysis.timeline['expand']" >Показать всё</a>
+					</div>
+				</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="poiskovye_sistemy" class="pageitem analysis-h2">Поисковые системы</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="osnovnye_parametry">
+								<h3>Основные параметры</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexCitation']['view']">
+																							<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['yandexCitation']['isActual']}"
+	description-id="yandexCitationDescription"
+	ng-click="historyPeriods.yandexCitation = historyPeriods.yandexCitation || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Яндекс ТИЦ</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<a href="https://yaca.yandex.ru/yca/cy/ch/biksileev.ru/" target="_blank">Нет</a>
+						<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="yandexCitationDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexCitation == 'days'}"
+					ng-click="historyPeriods.yandexCitation = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexCitation == 'weeks'}"
+					ng-click="historyPeriods.yandexCitation = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexCitation == 'months'}"
+					ng-click="historyPeriods.yandexCitation = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='yandexCitationHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexCitation == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":10},{"date":"2016-05-11","value":0},{"date":"2016-05-13","value":0},{"date":"2016-05-16","value":0}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='yandexCitationHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexCitation == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":10},{"date":"2016-04-11","value":10},{"date":"2016-05-09","value":0}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='yandexCitationHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexCitation == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-01-01","value":0},{"date":"2015-11-01","value":10},{"date":"2016-04-01","value":10}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+	<div class="description info">
+					<p>Отсутствие ТИЦ может говорить о том, что ваш сайт молод. Или количество и качество ссылающихся сайтов слишком низко.</p>				<p>Показатель поисковой системы Яндекс, предназначенный для определения авторитетности сайтов путём подсчёта количества ссылающихся на него ресурсов сходной тематики. Используется для оценки релевантности (степени соответствия поисковым запросам) сайтов в Яндекс.Каталоге, что позволяет определить значимость того или иного проекта.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['yandexRank']['view']">
+																							<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['yandexRank']['isActual']}"
+	description-id="yandexRankDescription"
+	ng-click="historyPeriods.yandexRank = historyPeriods.yandexRank || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Яндекс Rank</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Нет						<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="yandexRankDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexRank == 'days'}"
+					ng-click="historyPeriods.yandexRank = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexRank == 'weeks'}"
+					ng-click="historyPeriods.yandexRank = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexRank == 'months'}"
+					ng-click="historyPeriods.yandexRank = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='yandexRankHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexRank == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":2},{"date":"2016-05-11","value":0},{"date":"2016-05-13","value":0},{"date":"2016-05-16","value":0}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='yandexRankHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexRank == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":2},{"date":"2016-04-11","value":2},{"date":"2016-05-09","value":0}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='yandexRankHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexRank == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":2},{"date":"2016-04-01","value":2}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+	<div class="description fail">
+					<p>Ранк может отсутствовать из-за низкого ТИЦ.</p>
+	<p>Показатель поисковой системы Яндекс, напрямую зависящий от числа тИЦ. На практике не было выявлено влияние данного параметра на что-либо.</p>			</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googlePageRank']['view']">
+																							<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['googlePageRank']['isActual']}"
+	description-id="googlePageRankDescription"
+	ng-click="historyPeriods.googlePageRank = historyPeriods.googlePageRank || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Google PageRank</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							0 из 10
+								<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="googlePageRankDescription">
+				<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googlePageRank == 'days'}"
+					ng-click="historyPeriods.googlePageRank = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googlePageRank == 'weeks'}"
+					ng-click="historyPeriods.googlePageRank = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googlePageRank == 'months'}"
+					ng-click="historyPeriods.googlePageRank = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='googlePageRankHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googlePageRank == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":-1},{"date":"2016-05-11","value":0},{"date":"2016-05-13","value":0},{"date":"2016-05-16","value":0}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='googlePageRankHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googlePageRank == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":-1},{"date":"2016-04-11","value":-1},{"date":"2016-05-09","value":0}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='googlePageRankHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googlePageRank == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":-1},{"date":"2016-04-01","value":-1}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+		<div class="description info">
+				<p>Оценка, которую поисковая система Google ставит сайту в целом и его отдельным страницам. Оценивается сайт по десятибальной системе и, в принципе, отражает “отношение” поисковика к сайту: чем выше оценка, тем выше “уважение” Google к сайту.</p>	</div>
+</div>																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="indeksacia">
+								<h3>Индексация</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexIndex']['view']">
+																							<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['yandexIndex']['isActual']}"
+	description-id="yandexIndexDescription"
+	ng-click="historyPeriods.yandexIndex = historyPeriods.yandexIndex || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Яндекс</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<a href="http://yandex.ru/yandsearch?text=host%3Abiksileev.ru*%20%7C%20host%3Awww.biksileev.ru*" target="_blank">145</a>
+									<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="yandexIndexDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexIndex == 'days'}"
+					ng-click="historyPeriods.yandexIndex = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexIndex == 'weeks'}"
+					ng-click="historyPeriods.yandexIndex = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.yandexIndex == 'months'}"
+					ng-click="historyPeriods.yandexIndex = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='yandexIndexHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexIndex == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":92},{"date":"2016-05-11","value":144},{"date":"2016-05-13","value":145},{"date":"2016-05-16","value":145}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+		<div
+			id='yandexIndexHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexIndex == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":69},{"date":"2016-04-11","value":92},{"date":"2016-05-09","value":145}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+		<div
+			id='yandexIndexHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.yandexIndex == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-01-01","value":35},{"date":"2015-11-01","value":69},{"date":"2016-04-01","value":92}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+	</div>
+	</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googleIndex']['view']">
+																							<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['googleIndex']['isActual']}"
+	description-id="googleIndexDescription"
+	ng-click="historyPeriods.googleIndex = historyPeriods.googleIndex || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Google</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<a href="https://www.google.com/search?q=site:biksileev.ru" target="_blank">168</a>
+									<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="googleIndexDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googleIndex == 'days'}"
+					ng-click="historyPeriods.googleIndex = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googleIndex == 'weeks'}"
+					ng-click="historyPeriods.googleIndex = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googleIndex == 'months'}"
+					ng-click="historyPeriods.googleIndex = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='googleIndexHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googleIndex == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":115},{"date":"2016-05-11","value":168},{"date":"2016-05-13","value":168},{"date":"2016-05-16","value":168}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+		<div
+			id='googleIndexHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googleIndex == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":89},{"date":"2016-04-11","value":115},{"date":"2016-05-09","value":168}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+		<div
+			id='googleIndexHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googleIndex == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-01-01","value":47},{"date":"2015-11-01","value":89},{"date":"2016-04-01","value":115}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="katalogi">
+								<h3>Каталоги</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexCatalog']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['dmozCatalog']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests[test['name']]['isActual']}"
+	description-id="dmozCatalogDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">DMOZ.org</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							К сожалению, нет.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="dmozCatalogDescription">
+	<div class="description info">
+		<p>DMOZ — всемирно известный каталог с ручной модерацией. В каталоге содержатся миллионы уникальных сайтов, поэтому DMOZ  до сих пор считается основным источником качественной информации, а его базой пользуются не только интернет-ресурсы, но и такие поисковые системы, как Google.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mailruCatalog']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests[test['name']]['isActual']}"
+	description-id="mailruCatalogDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Mail.ru</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							К сожалению, нет.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mailruCatalogDescription">
+	<div class="description info">
+		<p>Каталог портала Mail.ru. В данный момент нельзя зарегистрироваться, каталог является архивным.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['ramblerTop']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests[test['name']]['isActual']}"
+	description-id="ramblerTopDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Rambler</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							К сожалению, нет.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="ramblerTopDescription">
+	<div class="description info">
+		<p>Рамблер ТОП100 – рейтинг и каталог ресурсов интернета, а также сервис статистики посещаемости. </p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="sankcii">
+								<h3>Санкции</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexGlue']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['yandexGlue']['isActual']}"
+	description-id="yandexGlueDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Склейка домена</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Яндекс не считает домен склееным.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="yandexGlueDescription">
+	<div class="description success">
+					<p>Все отлично. Домен не является зеркалом стороннего сайта.</p>
+	<p>Обнаруживая сайты с одинаковой информацией, робот Яндекса выбирает один из них в качестве главного зеркала, а все остальные исключает из индексации. Чтобы основным был выбран именно продвигаемый домен, необходимо сообщить поисковой системе, какое зеркало является главным. Следует учитывать, что обновление этой информации происходит один раз в 2-12 недель.</p>
+	<p>Чтобы подсказать, какой сайт является основным, а какой — зеркалом, для Google используют 301 редирект, а для Яндекса — специальную директиву host в файле robots.txt. Стоит заметить, что одновременно воспользоваться двумя способами не получится.</p>
+	<p>
+		<a href="http://pr-cy.ru/news/p/1937" target="_blank">Как склеить домены</a>
+	</p>
+				</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['yandexAgs']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['yandexAgs']['isActual']}"
+	description-id="yandexAgsDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Фильтр АГС</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Фильтр не обнаружен.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="yandexAgsDescription">
+	<div class="description success">
+					<p>С вашим сайтом все в порядке.</p>
+	<p>Чтобы не попасть под фильтры, размещайте на сайте качественную и нужную информацию, которая несет в себе какую-либо пользу для посетителей.</p>
+<p>АГС — фильтр поисковой системы «Яндекс», ориентированный на обнаружение сайтов с малополезным контентом, сделанных, как правило, для продажи ссылок. С помощью данного алгоритма «Яндекс» заносит сайты в черный список.</p>
+	<p>Теперь вместо исключения страниц таких сайтов из поиска им будет <a href="http://webmaster.ya.ru/replies.xml?item_no=18552" target="_blank">аннулироваться тИЦ</a>. Это изменение распространяется также на все сайты, которые были обнаружены алгоритмом АГС ранее. Ссылки с таких сайтов по-прежнему не будут учитываться в ранжировании, а сами сайты могут ранжироваться ниже.</p>
+	<p>
+		<a href="http://pr-cy.ru/news/p/5269" target="_blank">Как быть уверенным что это АГС</a><br>
+		<a href="http://pr-cy.ru/news/p/5227" target="_blank">Обновленный АГС Яндекса</a><br>
+	</p>
+				</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['roskomnadzor']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['roskomnadzor']['isActual']}"
+	description-id="roskomnadzorDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Реестр запрещённых сайтов</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Домен и IP-адрес не найдены в реестре.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="roskomnadzorDescription">
+	<div class="description success">
+		
+	<p>Единый реестр доменных имён, указателей страниц сайтов в сети «Интернет» и сетевых адресов, позволяющих идентифицировать сайты в сети «Интернет», содержащие информацию, распространение которой в Российской Федерации запрещено</p>
+	<p>По информации Роскомнадзора, обжаловать решение о включении сайта в реестр могут владелец сайта, провайдер хостинга или оператор связи в судебном порядке в трёхмесячный срок.</p>
+	<p>Также, в случае удаления противоправной информации, возможно удаление сайта из реестра по обращению владельца сайта, провайдера хостинга или оператора связи. Такие обращения должны быть обработаны Роскомнадзором в течение трёх дней</p>
+	<p><a href="https://eais.rkn.gov.ru/" target="_blank">Сайт Единого реестра</a></p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="proverka_na_virusy">
+								<h3>Проверка на вирусы</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexSafeBrowsing']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['yandexSafeBrowsing']['isActual']}"
+	description-id="yandexSafeBrowsingDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Вирусы от Yandex</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Сайт не содержит вирусов					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="yandexSafeBrowsingDescription">
+	<div class="description success">
+		<p>Обычно заражение происходит вследствие какой-либо уязвимости, позволившей хакеру получить контроль над сайтом. Он может изменять содержание сайта (например, добавлять спам) или создавать на сайте новые страницы, обычно с целью фишинга (получения личных данных и информации о кредитных картах обманным путем). Хакеры могут также внедрять вредоносный код, например скрипты или фреймы iframe, которые извлекают содержание с другого сайта для атаки компьютеров, с которых выполняется просмотр данной страницы.</p>
+<p><a href="https://webmaster.yandex.ru/" target="_blank">Панель веб-мастера Яндекс</a></p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googleSafeBrowsing']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['googleSafeBrowsing']['isActual']}"
+	description-id="googleSafeBrowsingDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Вирусы от Google</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Сайт не содержит вирусов					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="googleSafeBrowsingDescription">
+	<div class="description success">
+		<p>Обычно заражение происходит вследствие какой-либо уязвимости, позволившей хакеру получить контроль над сайтом. Он может изменять содержание сайта (например, добавлять спам) или создавать на сайте новые страницы, обычно с целью фишинга (получения личных данных и информации о кредитных картах обманным путем). Хакеры могут также внедрять вредоносный код, например скрипты или фреймы iframe, которые извлекают содержание с другого сайта для атаки компьютеров, с которых выполняется просмотр данной страницы.</p>
+<p><a href="https://www.google.com/webmasters/" target="_blank">Панель веб-мастера Google</a></p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dopolnitelʹnye_ssylki">
+								<h3>Дополнительные ссылки</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="test-body box-text"
+	test-status="info"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<p>
+				<a href="http://yandex.ru/yandsearch?text=biksileev.ru&lr=0&noreask=1" target="_blank" rel="nofollow">Упоминания сайта в поиске</a>
+			</p>
+			<p>
+				<a href="http://blogs.yandex.ru/search.xml?text=link%3D%22http%3A%2F%2Fbiksileev.ru%22&group=2&ft=all" target="_blank" rel="nofollow">Пишут о сайте в блогах</a>
+			</p>
+			<p>
+				<a href="http://images.yandex.ru/yandsearch?itype=any&site=biksileev.ru" target="_blank" rel="nofollow">Картинки сайта в поиске</a>
+			</p>
+			<p>
+				<a href="http://yandex.ru/yandsearch?text=host:biksileev.ru+|+host:www.biksileev.ru&how=tm" target="_blank" rel="nofollow">Индекс с датой индексации</a>
+			</p>
+			<p>
+				<a href="http://news.yandex.ru/yandsearch?text=biksileev.ru&rpt=nnews2" target="_blank" rel="nofollow">Что пишут в новостях</a>
+			</p>
+			<p>
+				<a href="http://wayback.archive.org/web/*/http://biksileev.ru" target="_blank" rel="nofollow">История в веб-архив</a>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<p>
+				<a href="http://yandex.ru/infected?url=biksileev.ru" target="_blank" rel="nofollow">Проверить на вирусы</a>
+			</p>
+			<p>
+				<a href="http://webmaster.yandex.ru/spellcheck.xml?checkurl=biksileev.ru" target="_blank" rel="nofollow">Проверка орфографии на сайте</a>
+			</p>
+
+			<p>
+				<a href="http://yandex.ru/yandsearch?text=url%3Abiksileev.ru%20%7C%20url%3Abiksileev.ru" target="_blank" rel="nofollow">Кэш главной страницы</a>
+			</p>
+
+			<p>
+				<a href="http://pr-cy.ru/headers/biksileev.ru" target="_blank" rel="nofollow">Проверка HTTP заголовков</a>
+			</p>
+			<p>
+				<a href="http://www.copyscape.com/?q=biksileev.ru" target="_blank" rel="nofollow">Поиск плагиата</a>
+			</p>
+			<p>
+				<a href="http://goo.gl/ThfZBu" target="_blank" rel="nofollow">Усилить видимость в новостях</a>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<p>
+				<a href="https://www.google.com/search?q=link:biksileev.ru" target="_blank" rel="nofollow">Ссылаются на сайт</a>
+			</p>
+			<p>
+				<a href="http://www.google.ru/search?safe=off&tbo=1&tbs=blg%3A1&q=link%3Abiksileev.ru&btnG=%CF%EE%E8%F1%EA&lr=&aq=f&oq=" target="_blank" rel="nofollow">Пишут о сайте в блогах</a>
+			</p>
+			<p>
+				<a href="http://www.google.ru/search?q=site:biksileev.ru&tbm=isch" target="_blank" rel="nofollow">Картинки сайта в поиске</a>
+			</p>
+			<p>
+				<a href="https://www.google.com/search?hl=ru&q=info:biksileev.ru" target="_blank" rel="nofollow">Проверка склейки домена</a>
+			</p>
+			<p>
+				<a href="https://www.google.ru/search?q=related:biksileev.ru/&filter=0" target="_blank" rel="nofollow">Похожие сайты в поиске</a>
+			</p>
+			<p>
+				<a href="https://www.google.ru/search?q=site:biksileev.ru%2F%26&filter=0" target="_blank" rel="nofollow">Страницы не под фильтром</a>
+			</p>
+		</div>
+	</div>
+</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="knopka_dla_sajta">
+								<h3>Кнопка для сайта</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="test-body box-text"
+	test-status="info"
+>
+	<p>Предлагаем вам разместить нашу кнопку на сайт. Данная кнопка указывает на компетенцию владельца ресурса и дает возможность быстро перейти к анализу вашего сайта.</p>	<div class="row">
+		<div class="col-sm-2">
+			<img src="/assets/img/analysis-counter.png" width="88" height="31">
+		</div>
+		<div class="col-sm-9">
+			<textarea class="form-control" onclick="this.focus();this.select()" readonly="readonly"><a href="//a.pr-cy.ru/biksileev.ru" target="_blank"><img src="//a.pr-cy.ru/assets/img/analysis-counter.png" width="88" height="31" alt="Analysis"></a></textarea>
+		</div>
+	</div>
+
+</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="trafik" class="pageitem analysis-h2">Трафик</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="analitika">
+								<h3>Аналитика</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['statisticsGoogleUsers']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['statisticsGoogleHits']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['statisticsGoogleBounceRate']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="analitika">
+								<h3>Аналитика</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="check-test test-body inactive"
+	test-status="info"
+	ng-cloak
+	ng-if="!analysis.isAdvanced"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Аналитика</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<p class="p-list">Собирайте информацию и изменения статистики вашего сайта, подключив Google Analytics. Узнайте динамику:</p>
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-check green"></i> просмотров;</li>
+				<li><i class="fa-li fa fa-check green"></i> посетителей;</li>
+				<li><i class="fa-li fa fa-check green"></i> отказов.</li>
+			</ul>
+							<div ng-controller="AdvancedDomainsCtrl">
+					<button class="btn btn-warning"
+						ng-show="!analysis.userHasAdvancedAnalysis"
+						ng-disabled="analysis.isUpdating"
+						ng-click="addAdvanced('biksileev.ru', true)"
+					>
+						<i class="fa fa-rocket"></i> Провести расширенный анализ					</button>
+					<a class="btn btn-warning" href="/advanced/biksileev.ru/"
+						ng-show="analysis.userHasAdvancedAnalysis"
+					>
+						<i class="fa fa-rocket"></i> Перейти к расширенному анализу					</a>
+				</div>
+					</div>
+	</div>
+</div>																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="klucevye_slova">
+								<h3>Ключевые слова</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['keywordsGa']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="posesaemostʹ">
+								<h3>Посещаемость</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['alexaTraffic']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['alexaRank']['view']">
+																							<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['alexaRank']['isActual']}"
+	description-id="alexaRankDescription"
+	ng-click="historyPeriods.alexaRank = historyPeriods.alexaRank || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Рейтинг Alexa</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			<p>
+				Место в мире: 4 282 377																			&nbsp;<span class="green"><i class="fa fa-long-arrow-up"></i> 2 171</span>
+							</p>
+							<p>
+					Место в стране <img src="/assets/img/flags/ru.png" alt="Флаг страны Россия"> Россия:
+					171 206									</p>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="alexaRankDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.alexaRank == 'days'}"
+					ng-click="historyPeriods.alexaRank = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.alexaRank == 'weeks'}"
+					ng-click="historyPeriods.alexaRank = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.alexaRank == 'months'}"
+					ng-click="historyPeriods.alexaRank = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='alexaRankHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.alexaRank == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":6444537},{"date":"2016-05-11","value":4289495},{"date":"2016-05-13","value":4284548},{"date":"2016-05-16","value":4282377}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='alexaRankHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.alexaRank == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":1880868},{"date":"2016-04-11","value":6444537},{"date":"2016-05-09","value":4289495}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='alexaRankHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.alexaRank == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":1880868},{"date":"2016-04-01","value":6444537}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['alexaTrafficMap']['view']">
+																					<div class="test-body without-icon test-alexa-map"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['alexaTrafficMap']['isActual']}"
+>
+	<div ng-cloak alexa-map map-gdp-data='{"RU":"92.0"}' map-height="300"></div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['webomerGender']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['alexaRelatedSites']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['statisticsSystems']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['statisticsSystems']['isActual']}"
+	description-id="statisticsSystemsDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Системы статистики</div>
+		</div>
+		<div class="col-sm-8 content-test">
+																				<div class="text-img">
+										<img src="/assets/img/apps/Google Analytics.png"
+						alt=""
+						width="16"
+						height="16"
+						border="0"
+						err_src="/assets/img/apps/default.png"
+						title=""
+					>
+					<span title="">Google Analytics</span>
+				</div>
+																				<div class="text-img">
+										<img src="/assets/img/apps/Yandex.Metrika.png"
+						alt=""
+						width="16"
+						height="16"
+						border="0"
+						err_src="/assets/img/apps/default.png"
+						title=""
+					>
+					<span title="">Yandex.Metrika</span>
+				</div>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="statisticsSystemsDescription">
+	<div class="description">
+		<p>Сбор статистических данных о работе сайта - один из важных этапов продвижения ресурса. Обработка данных о посещениях сайта предоставляет огромное количество необходимых для бизнеса сведений. Любой посетитель может быть потенциальным клиентом, поэтому  владельцы сайтов стараются узнать о своих пользователях как можно больше информации. В этом им помогает статистика посещений.</p>
+	<p>Яндекс Метрика и Google Analytics – это популярные бесплатные сервисы обработки данных. Они предоставляют все необходимые отчеты о посещениях вашего сайта и способствуют скорейшей индексации страниц в поисковых системах.</p>
+	<p>
+		<a href="http://metrika.yandex.ru/" target="_blank">Яндекс Метрика</a><br>
+		<a href="http://www.google.com/analytics/" target="_blank">Google Analytics</a><br>
+
+	</p>	</div>
+</div>																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="ssylki_na_sajt" class="pageitem analysis-h2">Ссылки на сайт</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="obratnye_ssylki">
+								<h3>Обратные ссылки</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="check-test test-body inactive"
+	test-status="info"
+	ng-cloak
+	ng-if="!analysis.isAdvanced"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Обратные ссылки</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<p class="p-list"><p class="p-list">Следите за новыми обратными ссылками на сайта. Узнайте о:</p>
+	<ul class="fa-ul">
+		<li><i class="fa-li fa fa-check green"></i> новых добавленных ссылках;</li>
+		<li><i class="fa-li fa fa-check green"></i> качестве ссылок;</li>
+		<li><i class="fa-li fa fa-check green"></i> анкорах.</li>
+	</ul></p>
+							<div ng-controller="AdvancedDomainsCtrl">
+					<button class="btn btn-warning"
+						ng-disabled="analysis.isUpdating"
+						ng-click="addAdvanced('biksileev.ru', true)"
+					>
+						<i class="fa fa-rocket"></i> Провести расширенный анализ					</button>
+				</div>
+					</div>
+	</div>
+</div>																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dannye_<a_href=httpswwwmegaindexrufrom=56014_target=blank>megaindex<a>">
+								<h3>Данные <a href="https://www.megaindex.ru/?from=56014" target="_blank">MegaIndex</a></h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['megaindexLinksCount']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['megaindexDomainsCount']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['megaindexBacklinks']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dannye_linkpad">
+								<h3>Данные LinkPad</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['solomonoDataHrefs']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['solomonoDataHrefs']['isActual']}"
+	description-id="solomonoDataHrefsDescription"
+	ng-click="historyPeriods.solomonoDataHrefs = historyPeriods.solomonoDataHrefs || 'months'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Ссылается страниц</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							20										<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="solomonoDataHrefsDescription">
+	<div class="history">
+		<div
+			id='solomonoDataHrefsHistoryMonths'
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.solomonoDataHrefs == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-default="true"
+			chart-data='[{"date":"2015-06-01","value":20},{"date":"2015-07-01","value":18},{"date":"2015-08-01","value":18},{"date":"2015-09-01","value":18},{"date":"2015-10-01","value":19},{"date":"2015-11-01","value":19},{"date":"2015-12-01","value":20},{"date":"2016-01-01","value":21},{"date":"2016-02-01","value":21},{"date":"2016-03-01","value":21},{"date":"2016-04-01","value":20},{"date":"2016-05-01","value":20}]'
+			chart-width="100%"
+			chart-height="150px"
+			chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+		></div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['solomonoDataDonors']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['solomonoDataDonors']['isActual']}"
+	description-id="solomonoDataDonorsDescription"
+	ng-click="historyPeriods.solomonoDataDonors = historyPeriods.solomonoDataDonors || 'months'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Ссылаются доменов</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							5										<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="solomonoDataDonorsDescription">
+	<div class="history">
+		<div
+			id='solomonoDataDonorsHistoryMonths'
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.solomonoDataDonors == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-default="true"
+			chart-data='[{"date":"2015-06-01","value":3},{"date":"2015-07-01","value":4},{"date":"2015-08-01","value":4},{"date":"2015-09-01","value":4},{"date":"2015-10-01","value":5},{"date":"2015-11-01","value":5},{"date":"2015-12-01","value":5},{"date":"2016-01-01","value":5},{"date":"2016-02-01","value":5},{"date":"2016-03-01","value":5},{"date":"2016-04-01","value":5},{"date":"2016-05-01","value":5}]'
+			chart-width="100%"
+			chart-height="150px"
+			chart-value-plural-forms="[&quot;домен&quot;, &quot;домена&quot;, &quot;доменов&quot;]"
+		></div>
+	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dannye_majesticseo">
+								<h3>Данные MajesticSEO</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['majesticExtbackLinks']['view']">
+																							<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['majesticExtbackLinks']['isActual']}"
+	description-id="majesticExtbackLinksDescription"
+	ng-click="historyPeriods.majesticExtbackLinks = historyPeriods.majesticExtbackLinks || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Ссылается страниц</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							3										<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="majesticExtbackLinksDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticExtbackLinks == 'days'}"
+					ng-click="historyPeriods.majesticExtbackLinks = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticExtbackLinks == 'weeks'}"
+					ng-click="historyPeriods.majesticExtbackLinks = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticExtbackLinks == 'months'}"
+					ng-click="historyPeriods.majesticExtbackLinks = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='majesticExtbackLinksHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticExtbackLinks == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":6},{"date":"2016-05-11","value":4},{"date":"2016-05-13","value":3},{"date":"2016-05-16","value":3}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+		<div
+			id='majesticExtbackLinksHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticExtbackLinks == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":54},{"date":"2016-04-11","value":6},{"date":"2016-05-09","value":4}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+		<div
+			id='majesticExtbackLinksHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticExtbackLinks == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":54},{"date":"2016-04-01","value":6}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;страница&quot;, &quot;страницы&quot;, &quot;страниц&quot;]"
+					></div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['majesticRefDomains']['view']">
+																					
+		
+<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['majesticRefDomains']['isActual']}"
+	description-id="majesticRefDomainsDescription"
+	ng-click="historyPeriods.majesticRefDomains = historyPeriods.majesticRefDomains || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Ссылаются доменов</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							2										<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="majesticRefDomainsDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticRefDomains == 'days'}"
+					ng-click="historyPeriods.majesticRefDomains = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticRefDomains == 'weeks'}"
+					ng-click="historyPeriods.majesticRefDomains = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticRefDomains == 'months'}"
+					ng-click="historyPeriods.majesticRefDomains = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='majesticRefDomainsHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticRefDomains == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":3},{"date":"2016-05-11","value":2},{"date":"2016-05-13","value":2},{"date":"2016-05-16","value":2}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;домен&quot;, &quot;домена&quot;, &quot;доменов&quot;]"
+					></div>
+		<div
+			id='majesticRefDomainsHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticRefDomains == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":7},{"date":"2016-04-11","value":3},{"date":"2016-05-09","value":2}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;домен&quot;, &quot;домена&quot;, &quot;доменов&quot;]"
+					></div>
+		<div
+			id='majesticRefDomainsHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticRefDomains == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":7},{"date":"2016-04-01","value":3}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;домен&quot;, &quot;домена&quot;, &quot;доменов&quot;]"
+					></div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['majesticTrustFlow']['view']">
+																							<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['majesticTrustFlow']['isActual']}"
+	description-id="majesticTrustFlowDescription"
+	ng-click="historyPeriods.majesticTrustFlow = historyPeriods.majesticTrustFlow || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Траст</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			<div class="progress-info">
+									Низкий								— 5																			&nbsp;<span class="green">+1</span>
+							</div>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="majesticTrustFlowDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticTrustFlow == 'days'}"
+					ng-click="historyPeriods.majesticTrustFlow = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticTrustFlow == 'weeks'}"
+					ng-click="historyPeriods.majesticTrustFlow = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticTrustFlow == 'months'}"
+					ng-click="historyPeriods.majesticTrustFlow = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='majesticTrustFlowHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticTrustFlow == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":13},{"date":"2016-05-11","value":5},{"date":"2016-05-13","value":4},{"date":"2016-05-16","value":5}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='majesticTrustFlowHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticTrustFlow == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":0},{"date":"2016-04-11","value":13},{"date":"2016-05-09","value":5}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='majesticTrustFlowHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticTrustFlow == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":0},{"date":"2016-04-01","value":13}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+	<div class="description fail">
+		Уровень доверия поисковых систем к ссылочной массе. Чем выше показатель, тем выше доверие и качество ссылающихся на ваш сайт сайтов.	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['majesticCitationFlow']['view']">
+																							<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['majesticCitationFlow']['isActual']}"
+	description-id="majesticCitationFlowDescription"
+	ng-click="historyPeriods.majesticCitationFlow = historyPeriods.majesticCitationFlow || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Цитирование</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			<div class="progress-info">
+															Средний													— 20							</div>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="majesticCitationFlowDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticCitationFlow == 'days'}"
+					ng-click="historyPeriods.majesticCitationFlow = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticCitationFlow == 'weeks'}"
+					ng-click="historyPeriods.majesticCitationFlow = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.majesticCitationFlow == 'months'}"
+					ng-click="historyPeriods.majesticCitationFlow = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='majesticCitationFlowHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticCitationFlow == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":19},{"date":"2016-05-11","value":20},{"date":"2016-05-13","value":20},{"date":"2016-05-16","value":20}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='majesticCitationFlowHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticCitationFlow == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":15},{"date":"2016-04-11","value":19},{"date":"2016-05-09","value":20}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='majesticCitationFlowHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.majesticCitationFlow == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":15},{"date":"2016-04-01","value":19}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+	<div class="description success">
+		Объем и сила ссылок на ваш сайт. Чем выше показатель, тем больше качественных ссылок ссылается на ваш сайт.	</div>
+</div>																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="socialʹnye_seti">
+								<h3>Социальные сети</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['socialCounters']['view']">
+																							<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['socialCounters']['isActual']}"
+	description-id="socialCountersDescription"
+	ng-click="historyPeriods.socialCounters = historyPeriods.socialCounters || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Социальная активность</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+													<p>Общая социальная активность составляет 15  пунктов.</p>
+			<table class="table table-shares">
+				<tbody>
+																																																							<tr>
+							<td class="col-sm-6 shares-title">
+								<img src="/assets/img/vk.svg">
+								ВКонтакте							</td>
+							<td>
+								<div class="share">
+									3																	</div>
+							</td>
+						</tr>
+																																																							<tr>
+							<td class="col-sm-6 shares-title">
+								<img src="/assets/img/facebook.svg">
+								Facebook лайки							</td>
+							<td>
+								<div class="share">
+									4																	</div>
+							</td>
+						</tr>
+																																																							<tr>
+							<td class="col-sm-6 shares-title">
+								<img src="/assets/img/facebook.svg">
+								Facebook шареды							</td>
+							<td>
+								<div class="share">
+									0																	</div>
+							</td>
+						</tr>
+																																																							<tr>
+							<td class="col-sm-6 shares-title">
+								<img src="/assets/img/google-plus.svg">
+								Google+							</td>
+							<td>
+								<div class="share">
+									8																	</div>
+							</td>
+						</tr>
+									</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="socialCountersDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.socialCounters == 'days'}"
+					ng-click="historyPeriods.socialCounters = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.socialCounters == 'weeks'}"
+					ng-click="historyPeriods.socialCounters = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.socialCounters == 'months'}"
+					ng-click="historyPeriods.socialCounters = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='socialCountersHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.socialCounters == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":15},{"date":"2016-05-11","value":11},{"date":"2016-05-13","value":15},{"date":"2016-05-16","value":15}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='socialCountersHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.socialCounters == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2016-04-11","value":15},{"date":"2016-05-09","value":15}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+		<div
+			id='socialCountersHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.socialCounters == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2016-04-01","value":15}]'
+			chart-width="100%"
+			chart-height="150px"
+								></div>
+	</div>
+	<div class="description success">
+		<p>Ссылки из социальных сетей не имеют определяющего значения на положение сайта в выдаче и не передают вес сайту, но тем не менее косвенно влияют на его продвижение. Социальные сети и блогосфера – это миллионы людей, которые своими поведенческими реакциями отражают в том числе и свое отношение к сайтам.</p>
+	<p>Для поисковиков социальные факторы – это в первую очередь человеческие сигналы, которые так же можно применять для улучшения позиций сайта в выдаче. Если у вашей компании нет своей странички/группы в социальной сети, вы не ведете корпоративный блог или твиттер, имеет смысл хотя бы разместить на сайте кнопки социальных сетей для привлечения дополнительного трафика.</p>
+	<p><a href="https://sociale.ru" target="_blank">Сервис социальных кнопок</a></p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['facebookSocial']['view']">
+																							
+<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['facebookSocial']['isActual']}"
+	description-id="facebookSocialDescription"
+	ng-click="historyPeriods.facebookSocial = historyPeriods.facebookSocial || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Facebook</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			
+			
+				Ссылка на страницу найдена.
+				<div class="social-group">
+											<img src="https://scontent.xx.fbcdn.net/v/t1.0-1/p80x80/13082712_495306704011180_2532807149040251089_n.jpg?oh=5a0e388a3293255e3456babbf6be37e0&oe=579C101D">
+					
+					<div class="info">
+													<a href="https://www.facebook.com/Biksileev/" target="_blank"><b>Студия Дмитрия Биксилеева</b></a>
+						
+						<p>
+							<span>
+								Лайков — 48								,
+							</span>
+							<span>
+								Обсуждений — 0															</span>
+						</p>
+
+					</div>
+				</div>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="facebookSocialDescription">
+				<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.facebookSocial == 'days'}"
+					ng-click="historyPeriods.facebookSocial = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.facebookSocial == 'weeks'}"
+					ng-click="historyPeriods.facebookSocial = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.facebookSocial == 'months'}"
+					ng-click="historyPeriods.facebookSocial = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='facebookSocialHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.facebookSocial == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":36},{"date":"2016-05-11","value":48},{"date":"2016-05-13","value":48},{"date":"2016-05-16","value":48}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;лайк&quot;, &quot;лайка&quot;, &quot;лайков&quot;]"
+					></div>
+		<div
+			id='facebookSocialHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.facebookSocial == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":8},{"date":"2016-04-11","value":36},{"date":"2016-05-09","value":48}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;лайк&quot;, &quot;лайка&quot;, &quot;лайков&quot;]"
+					></div>
+		<div
+			id='facebookSocialHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.facebookSocial == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":8},{"date":"2016-04-01","value":36}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;лайк&quot;, &quot;лайка&quot;, &quot;лайков&quot;]"
+					></div>
+	</div>
+		<div class="description success">
+		<p>Cсылки с Facebook индексируются поисковиками. И наибольшую пользу приносят лайки самой социальной странички компании. Именно такие ссылки учитываются поисковыми системами. Чем больше лайков получает страница в Facebook продвигаемого сайта, тем больше ссылок с разных страниц пользователей социальной сети будет стоять на продвигаемый сайт.</p>
+	<p>Наибольшую ценность и вес, представляют лайки авторитетных аккаунтов и известных страниц. Это так же положительно сказывается и на трафике сайта. Для привлечения лайков на продвигаемый сайт можно создавать интересный контент, проводить различные конкурсы и опросы.</p>
+	<p>Количество поделившихся вашей ссылкой на Facebook схоже с обратными ссылками, поэтому может иметь даже большую ценность, чем лайки.</p>
+	<p><a href="http://pr-cy.ru/news/p/5406">Как добавить информацию на сайте о социальных страницах</a></p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['vkontakteSocial']['view']">
+																							
+<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['vkontakteSocial']['isActual']}"
+	description-id="vkontakteSocialDescription"
+	ng-click="historyPeriods.vkontakteSocial = historyPeriods.vkontakteSocial || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">ВКонтакте</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			
+							Ссылка на группу найдена.
+				<div class="social-group">
+											<img src="https://pp.vk.me/c624818/v624818497/4ebe4/hFOHcKkfzEs.jpg">
+					
+					<div class="info">
+													<a href="https://vk.com/biksileev" target="_blank"><b>Студия Дмитрия Биксилеева</b></a>
+						
+						
+													<p>
+								Участников — 174															</p>
+											</div>
+				</div>
+
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="vkontakteSocialDescription">
+				<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.vkontakteSocial == 'days'}"
+					ng-click="historyPeriods.vkontakteSocial = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.vkontakteSocial == 'weeks'}"
+					ng-click="historyPeriods.vkontakteSocial = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.vkontakteSocial == 'months'}"
+					ng-click="historyPeriods.vkontakteSocial = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='vkontakteSocialHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.vkontakteSocial == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":173},{"date":"2016-05-11","value":174},{"date":"2016-05-13","value":174},{"date":"2016-05-16","value":174}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;участник&quot;, &quot;участника&quot;, &quot;участников&quot;]"
+					></div>
+		<div
+			id='vkontakteSocialHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.vkontakteSocial == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":164},{"date":"2016-04-11","value":173},{"date":"2016-05-09","value":174}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;участник&quot;, &quot;участника&quot;, &quot;участников&quot;]"
+					></div>
+		<div
+			id='vkontakteSocialHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.vkontakteSocial == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":164},{"date":"2016-04-01","value":173}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;участник&quot;, &quot;участника&quot;, &quot;участников&quot;]"
+					></div>
+	</div>
+		<div class="description success">
+		<p>ВКонтакте все ссылки стоят через редирект. В выдаче Яндекса можно найти профили из ВКонтакте, а в поиске по блогам – статусы и заметки, где так же могут быть размещены и ссылки. Это может обеспечить дополнительный трафик.</p>
+	<p>Яндекс так же обращает внимание на количество человек в группе продвигаемого сайта и учитывает эти данные при ранжировании сайта.</p>
+	<p><a href="http://pr-cy.ru/news/p/5406">Как добавить информацию на сайте о социальных страницах</a></p>
+
+		</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['googlePlusSocial']['view']">
+																									
+<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['googlePlusSocial']['isActual']}"
+	description-id="googlePlusSocialDescription"
+	ng-click="historyPeriods.googlePlusSocial = historyPeriods.googlePlusSocial || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Google+</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			
+			
+				Ссылка на страницу найдена.
+				<div class="social-group">
+											<img src="https://lh4.googleusercontent.com/-RKLp4DeRA00/AAAAAAAAAAI/AAAAAAAAAA0/rxpLJbWdI0U/photo.jpg?sz=80">
+					
+					<div class="info">
+													<a href="https://plus.google.com/+BiksileevRuS" target="_blank"><b>Студия Дмитрия Биксилеева</b></a>
+						
+						<p>
+							<span>
+								Поделилось — 8								,
+							</span>
+							<span>
+								Добавлено в +1 — 8															</span>
+						</p>
+
+					</div>
+				</div>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="googlePlusSocialDescription">
+				<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googlePlusSocial == 'days'}"
+					ng-click="historyPeriods.googlePlusSocial = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googlePlusSocial == 'weeks'}"
+					ng-click="historyPeriods.googlePlusSocial = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.googlePlusSocial == 'months'}"
+					ng-click="historyPeriods.googlePlusSocial = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='googlePlusSocialHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googlePlusSocial == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":10},{"date":"2016-05-11","value":8},{"date":"2016-05-13","value":8},{"date":"2016-05-16","value":8}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;добавлено в +1&quot;, &quot;добавлено в +1&quot;, &quot;добавлено в +1&quot;]"
+					></div>
+		<div
+			id='googlePlusSocialHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googlePlusSocial == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":11},{"date":"2016-04-11","value":10},{"date":"2016-05-09","value":8}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;добавлено в +1&quot;, &quot;добавлено в +1&quot;, &quot;добавлено в +1&quot;]"
+					></div>
+		<div
+			id='googlePlusSocialHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.googlePlusSocial == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":11},{"date":"2016-04-01","value":10}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;добавлено в +1&quot;, &quot;добавлено в +1&quot;, &quot;добавлено в +1&quot;]"
+					></div>
+	</div>
+		<div class="description success">
+		<p>В выдаче Google отдает предпочтение сайтам, добавленным в Google+ Круги. При поиске по местным результатам Google часто ставит местные Google+ результаты выше других.</p>
+	<p>Положительно на продвижение влияют не только +1 от авторитетных пользователей (Google Author Rang), но и пользователей старой почты Gmail. Проверенное авторство на информацию в Google+ служит залогом доверия у поисковой машины, т.е. в выдаче информация от проверенного аккаунта будет иметь большую релевантность, чем информация без подобной проверки.</p>
+	<p>Не стоит искусственно накручивать +1, это чревато санкциями со стороны поисковика, ведь определить такие манипуляции для Google не представляет большого труда.</p>
+	<p><a href="http://pr-cy.ru/news/p/5406">Как добавить информацию на сайте о социальных страницах</a></p>
+
+		</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['twitterSocial']['view']">
+																											
+<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['twitterSocial']['isActual']}"
+	description-id="twitterSocialDescription"
+	ng-click="historyPeriods.twitterSocial = historyPeriods.twitterSocial || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Twitter</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			
+			
+				Ссылка на страницу найдена.
+				<div class="social-group">
+											<img src="https://pbs.twimg.com/profile_images/470810277013757952/MBEDgEtH_normal.jpeg">
+					
+					<div class="info">
+													<a href="http://twitter.com/Biksileev" target="_blank"><b>Дмитрий Биксилеев</b></a>
+						
+						<p>
+							<span>
+								Твитов — 6								,
+							</span>
+							<span>
+								Читаемых — 73								,
+							</span>
+							<span>
+								Читателей — 6															</span>
+						</p>
+
+					</div>
+				</div>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="twitterSocialDescription">
+				<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.twitterSocial == 'days'}"
+					ng-click="historyPeriods.twitterSocial = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.twitterSocial == 'weeks'}"
+					ng-click="historyPeriods.twitterSocial = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.twitterSocial == 'months'}"
+					ng-click="historyPeriods.twitterSocial = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='twitterSocialHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.twitterSocial == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":2},{"date":"2016-05-11","value":6},{"date":"2016-05-13","value":6},{"date":"2016-05-16","value":6}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;читатель&quot;, &quot;читателя&quot;, &quot;читателей&quot;]"
+					></div>
+		<div
+			id='twitterSocialHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.twitterSocial == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":3},{"date":"2016-04-11","value":2},{"date":"2016-05-09","value":6}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;читатель&quot;, &quot;читателя&quot;, &quot;читателей&quot;]"
+					></div>
+		<div
+			id='twitterSocialHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.twitterSocial == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":3},{"date":"2016-04-01","value":2}]'
+			chart-width="100%"
+			chart-height="150px"
+										chart-value-plural-forms="[&quot;читатель&quot;, &quot;читателя&quot;, &quot;читателей&quot;]"
+					></div>
+	</div>
+		<div class="description success">
+		<p>Поисковые системы охотно индексируют твиты. У Яндекса даже есть отдельный поиск по твитам. Ссылки в твитах также индексируются, в том числе и непрямые (например, через сервисы goo.gl и др.). При этом твиттер индексируют быстророботы. Чтобы ссылка с твиттера имела влияние на продвижение сайта в Google и Яндексе, она должна быть проиндексирована поисковыми системами.</p>
+	<p>Твиттер помогает продвижению сайта и ускоряет его индексацию.</p>
+	<p><a href="http://pr-cy.ru/news/p/5406">Как добавить информацию на сайте о социальных страницах</a></p>	</div>
+</div>																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="optimizacia" class="pageitem analysis-h2">Оптимизация</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="kontent">
+								<h3>Контент</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['mainPageTitle']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageTitle']['isActual']}"
+	description-id="mainPageTitleDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Заголовок страницы</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Продвижение и раскрутка сайта в поиске Яндекса - Студия Дмитрия Биксилеева			
+			<div class="length"><b>Длина:</b> 74 символа</div>
+
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageTitleDescription">
+	<div class="description fail">
+		<p>Заголовком страницы выступает тег title, который является ключевым в SEO-структуре сайта. Тот заголовок, который прописан в теге title, и выдаётся в результатах поисковой машины.</p>
+	<p>Текст, который является заголовком страницы, обязательно должен нести полную информативность, чёткость, быть уникальным и варьироваться в размере от 10 до 70 символов.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageDescription']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageDescription']['isActual']}"
+	description-id="mainPageDescriptionDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Описание страницы</div>
+		</div>
+		<div class="col-sm-8 content-test">
+
+							Аудит сайта в подарок. Продвижение по сотням запросов.Результат увидите уже через 2-3 месяца. Аудит юзабилити, улучшение структуры сайта.				<div class="length"><b>Длина:</b> 137 символов</div>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageDescriptionDescription">
+	<div class="description success">
+		<p>Описание страницы отображается в мета-теге description. Для каждой страницы должно быть своё описание. Важность описания страницы в том, что поисковая система может использовать его для создания сниппетов. Описание имеет влияние на ранжирование результатов в поисковике.</p>
+<p>Напишите для каждой страницы description длиною от 70 до 160 символов (включая пробелы). Используйте ключевые слова, которые максимально отображают суть текста. Сделайте текст уникальным. Наиболее важные ключевые слова расположите в начале описания.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageHeaders']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageHeaders']['isActual']}"
+	description-id="mainPageHeadersDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Заголовки</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Тег H1 повторяется больше чем один раз.										<div class="row headers-count">
+											<div class="col-sm-2">
+							<b>H1:</b> <span>2</span>
+						</div>
+											<div class="col-sm-2">
+							<b>H2:</b> <span>74</span>
+						</div>
+											<div class="col-sm-2">
+							<b>H3:</b> <span>0</span>
+						</div>
+											<div class="col-sm-2">
+							<b>H4:</b> <span>0</span>
+						</div>
+											<div class="col-sm-2">
+							<b>H5:</b> <span>0</span>
+						</div>
+											<div class="col-sm-2">
+							<b>H6:</b> <span>0</span>
+						</div>
+									</div>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageHeadersDescription">
+	<div class="description fail">
+		<p>Заголовки на странице (теги h1-h6) используются для показания важности текста, который расположен после каждого заголовка. С его помощью вы можете структурировать свой текст по подзаголовкам, что придаст тексту более ухоженный и упорядоченный вид при продвижении вашего сайта.</p>
+
+<p>Наиболее важным тегом является h1, то есть самый главный заголовок, который стоит размещать сверху страницы. Не добавляйте более одного тега h1, так как поисковый робот может неоднозначно определить данный тег и отбросить важную информацию.</p>
+
+<p>Подзаголовки h2-h6 применяйте сколько угодно по своему усмотрению. Грамотное использование тегов заголовков поможет стимулировать рост трафика. Не нужно размещать в тегах заголовков полностью весь текст, ведь поисковик может определить только первые несколько слов текста, а остальные отбросить.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageWordsCount']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageWordsCount']['isActual']}"
+	description-id="mainPageWordsCountDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Количество слов</div>
+		</div>
+		<div class="col-sm-8 content-test">
+												Найдено 244 слова.									</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageWordsCountDescription">
+	<div class="description success">
+		<p>Длина текста на странице не должна быть слишком короткой &mdash; иначе в ней не будет достаточного количества ключевых слов, но и не быть слишком длинной &mdash; в этом случае статья станет "размытой" в глазах поисковых систем и ключевые слова затеряются в длинном тексте.</p>
+	<p>Оптимальная длина текста &mdash; где-то 1000-2000 слов для двух-трёх продвигаемых ключевых слов/фраз. Конечно, по тем или иным причинам не всегда удаётся уложиться в эти рамки. Кстати, такая длина текста хороша не только для поисковых систем, но и для посетителя. Люди не любят читать уж больно длинные тексты, как и текст, разбитый на тысячу страниц.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageTextLength']['view']">
+																					<div class="check-test inactive"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageTextLength']['isActual']}"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Длина текста</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			2 443 символа		</div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageSickness']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageSickness']['isActual']}"
+	description-id="mainPageSicknessDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Тошнота (без стоп слов)</div>
+		</div>
+		<div class="col-sm-8 content-test">
+															3.46%									</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageSicknessDescription">
+	<div class="description success">
+		<p>Тошнотой является один из качественных показателей текста и подразумевает частоту повтора в текстовом документе одинаковых слов. "Академическая частота" равная доле повторяемых слов ко всему объему текста.</p>
+	<p>Тексты с высоким уровнем тошноты (выше 8%) имеют низкое качество, считаются заспамленными, обладают плохой читабельностью, что, несомненно, отпугнет реальных посетителей. А поисковые машины при их обнаружении снижают свой траст к сайту и могут даже его забанить. Низкий же уровень тошноты не поможет в продвижении сайта.</p>
+	<p>Занимаясь написанием текста, не допускайте повышение тошнотности более 8-9%. Также не стоит стремиться к нулю. Нормальный уровень тошнотности - 4-6%. Практически вся классическая литература имеет такой уровень тошнотности.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPagePageSize']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPagePageSize']['isActual']}"
+	description-id="mainPagePageSizeDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Размер HTML страницы</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							92 КБ					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPagePageSizeDescription">
+	<div class="description success">
+		<p>Размер страницы не должен превышать 300 КБ, его необходимо уменьшать в разумных пределах, удаляя не информативный контент. Оптимальным считается размер документа до 100 Кб.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['loadTime']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['loadTime']['isActual']}"
+	description-id="loadTimeDescription"
+	ng-click="historyPeriods.loadTime = historyPeriods.loadTime || 'days'"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Скорость загрузки HTML</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<img class="chart" src="/assets/img/test-chart.svg" tooltip-placement="top" tooltip="Показать историю">
+			<div class="progress-info">
+				<span>3 сек</span>
+				- быстрее чем 3% проверенных сайтов.			</div>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="loadTimeDescription">
+		<div class="history">
+		<div class="btn-group">
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.loadTime == 'days'}"
+					ng-click="historyPeriods.loadTime = 'days'"
+							>Месяц</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.loadTime == 'weeks'}"
+					ng-click="historyPeriods.loadTime = 'weeks'"
+							>Год</button>
+			<button class="btn btn-default"
+									ng-class="{active: historyPeriods.loadTime == 'months'}"
+					ng-click="historyPeriods.loadTime = 'months'"
+							>Весь период</button>
+		</div>
+		<br>
+		<div
+			id='loadTimeHistoryDays'
+			class="chart-days"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.loadTime == 'days'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='days'
+			chart-data='[{"date":"2016-04-15","value":1.5830249786377},{"date":"2016-05-11","value":1.442321062088},{"date":"2016-05-13","value":1.3143401145935},{"date":"2016-05-16","value":3.0045309066772}]'
+			chart-width="100%"
+			chart-height="150px"
+							chart-value-precision="3"
+										chart-value-plural-forms="[&quot;секунда&quot;, &quot;секунды&quot;, &quot;секунд&quot;]"
+					></div>
+		<div
+			id='loadTimeHistoryWeeks'
+			class="chart-weeks"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.loadTime == 'weeks'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='weeks'
+			chart-data='[{"date":"2015-11-23","value":3.0892550945282},{"date":"2016-04-11","value":1.5830249786377},{"date":"2016-05-09","value":1.442321062088}]'
+			chart-width="100%"
+			chart-height="150px"
+							chart-value-precision="3"
+										chart-value-plural-forms="[&quot;секунда&quot;, &quot;секунды&quot;, &quot;секунд&quot;]"
+					></div>
+		<div
+			id='loadTimeHistoryMonths'
+			class="chart-months"
+			ng-cloak
+			history-chart
+			chart-show="historyPeriods.loadTime == 'months'"
+			chart-options='{"daysDateFormat":"MMMM DD","weeksDateFormat":"W неделя","monthsDateFormat":"YYYY MMMM","language":"ru","dataDateFormat":"YYYY-MM-DD","translations":{"ru":{"monthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],"shortMonthNames":["Янв","Фев","Мар","Апр","Май","Июн","Июл","Авг","Сен","Окт","Ноя","Дек"],"dayNames":["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"],"shortDayNames":["Пнд","Втр","Срд","Чтв","Птн","Сбт","Вск"],"zoomOutText":"Показать все"}}}'
+			chart-period='months'
+			chart-data='[{"date":"2015-11-01","value":3.0892550945282},{"date":"2016-04-01","value":1.5830249786377}]'
+			chart-width="100%"
+			chart-height="150px"
+							chart-value-precision="3"
+										chart-value-plural-forms="[&quot;секунда&quot;, &quot;секунды&quot;, &quot;секунд&quot;]"
+					></div>
+	</div>
+	<div class="description fail">
+		<p>Скорость загрузки напрямую влияет на пользовательские факторы. Снижение времени загрузки напрямую снижает показатели отказов. Уменьшение времени загрузки на одну секунду увеличивает конверсию на два процента (но функция не линейная). А увеличение времени загрузки до 7 секунд увеличивает показатель отказов на 30%. Всё, что загружается 7 секунд и больше, вызывает рост показателя отказов.</p>
+<p>Робот Яндекса реже посещает медленные сайты. Это влияет на эффективность продвижения, такой сайт редко индексируется. Также было установлено, что прямое влияние на ранжирование запросов оказывает время ответа сервера.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageInternalLinks']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageInternalLinks']['isActual']}"
+	description-id="mainPageInternalLinksDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Внутренние ссылки</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Мы нашли 159 ссылок, из них  индексируются 159.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageInternalLinksDescription">
+	<div class="description fail">
+					<p>Практика показывает, что лучше избегать превышения в 100 внутренних ссылок.</p>				С помощью внутренних ссылок можно влиять на перераспределение веса между отдельными страницами ресурса, ссылаясь на более значимые разделы или статьи. Это перераспределение веса называется перелинковкой и широко используется опытными оптимизаторами как часть внутренней оптимизации сайта.<br><br>
+	Внутренние ссылки также помогают пользователям сайта упрощать навигацию, позволяют иметь доступ к любой части ресурса и ускоряют попадание посетителя в тот или иной раздел. Правильная перелинковка - это не только любовь от поисковых систем, но также и от пользователей, поскольку является одной из составляющих юзабилити.	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageExternalLinks']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageExternalLinks']['isActual']}"
+	description-id="mainPageExternalLinksDescription"
+	>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Внешние ссылки</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Мы нашли 9 ссылок, из них индексируется 1.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageExternalLinksDescription">
+	<div class="description success">
+				<p>Внешняя ссылка означает то, что
+	вы ссылаетесь на внешний ресурс. Старайтесь не ссылаться на плохие ресурсы, то
+	есть те, которые имеют недостоверную информацию и могут навредить пользователю.
+	Много исходящих ссылок на вашем сайте –
+	тоже не очень хорошо. Ссылайтесь только на авторитетные ресурсы.</p>
+	<p>Не ставьте исходящие ссылки на
+	главной странице. Продажа ссылок сильно портит продвижение.</p>
+	<p><a href="http://pr-cy.ru/lib/seo/Vneshnie-ssylki" target="_blank">Подробнее про внешние ссылки</a></p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageBrokenLinks']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['htmlValidator']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['htmlValidator']['isActual']}"
+	description-id="htmlValidatorDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Ошибки HTML кода</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			
+							Найдено 308 ошибок и 10 предупреждений.			
+
+
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="htmlValidatorDescription">
+	<div class="description fail">
+		<p>
+	W3C валидатор – это сервис, который
+позволяет проверить веб-страницы по нескольким стандартам одновременно,
+проверить, соответствует ли ваш сайт формату HTML (XHTML).
+</p>
+<p>
+Проверка поможет избежать мелких ошибок (пропущенных скобок, кавычек,
+неправильно вложенных тэгов и т.д.); поддержка W3C валидатора современными браузерами, что
+сказывается на правильности отображения страниц в браузере; валидный код легче
+интерпретировать и обрабатывать; если код валиден, то это гарантирует
+совместимость и с существующими, и с будущими версиями браузеров.
+</p>
+<p><a target="_blank" href="http://validator.w3.org/check?uri=http://biksileev.ru">Сервис W3C</a></p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['wot']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['wot']['isActual']}"
+	description-id="wotDescription"
+>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Уровень доверия</div>
+		</div>
+		<div class="col-sm-8 content-test">
+													<p>Сайт еще не имеет оценок пользователей в сервисе Web of Trust (WOT)</p>
+					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="wotDescription">
+	<div class="description info">
+		<p>
+	Уровень доверия в сервисе Web of Trust (WOT) показывает наглядную оценку сайта
+от пользователей данного ресурса, которые уже установили это расширение в свой
+браузер. Принцип работы: одни пользователи ставят сайту оценку, а другие,
+исходя из оценки, решают, заходить на этот сайт или нет. WOT полностью бесплатен.
+</p>
+<p>
+	После
+установки расширения, которое доступно для многих популярных браузеров, в
+поисковой выдаче возле сайта будет определённый индикатор. Зелёный кружочек
+означает, что сайт безопасен. Жёлтый – что нужно быть осторожным, используя
+данный ресурс. Красный кружочек говорит, что сайт имеет вредоносный контент и
+заходить на него опасно.
+</p>	</div>
+</div>
+
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['microdataSchemaOrg']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests[test['name']]['isActual']}"
+	description-id="microdataSchemaOrgDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Микроразметка Schema.org</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Не найдена.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="microdataSchemaOrgDescription">
+	<div class="description info">
+		<p>Schema.org является единым общепризнанным стандартом, который распознают наиболее популярные поисковые системы, такие как Google, Яндекс, Yahoo и Bing.</p><p>Микроразметка — это семантическая разметка страниц сайта с целью структурирования данных, основанная на внедрении специальных атрибутов в HTML код документа.</p><p>Плюсы микроразметки:</p><ol>
+		<li>Логическая структура информации на странице помогает поисковым системам извлекать и обрабатывать данные.
+		<li>Формирование расширенных сниппетов на странице с результатами поискового запроса улучшает кликабельность.</li>
+	</ol>
+	<p>Разметка происходит непосредственно в HTML-коде страниц с помощью специальных атрибутов и не требует создания отдельных экспортных файлов.</p>
+	<p>
+		<a href="http://pr-cy.ru/news/p/5333" target="_blank">Как внедрить микроразметку информации на сайте, и что это дает</a><br>
+		<a href="https://yandex.ru/support/webmaster/schema-org/what-is-schema-org.xml" target="_blank">Schema.org в Яндекс</a><br>
+		<a href="https://developers.google.com/schemas/search/answers" target="_blank">Schema.org в Google</a>
+	</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['microdataOpenGraph']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests[test['name']]['isActual']}"
+	description-id="microdataOpenGraphDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Микроразметка Open Graph</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Не найдена.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="microdataOpenGraphDescription">
+	<div class="description info">
+		<p>Стандарт Open Graph разработан социальной сетью Facebook. Его чаще всего используют для того, чтобы публикуемые ссылки с сайтов были расширенными, красивыми и понятными.</p>
+	<p>Поисковые системы могут использовать разметку для формирования заголовка сниппета. Яндекс также использует разметку для передачи данных в сервис Яндекс.Видео.</p>
+	<p>Чтобы передать информацию сервисам, необходимо в HTML-код (в элемент head) добавить следующие обязательные метатеги:</p>
+
+	<ol>
+		<li>og:type — тип объекта, например, video.movie (фильм) или website. Если у вас несколько объектов на странице, выберите один из них (главный). В зависимости от типа можно указать дополнительные свойства.</li>
+		<li>og:image — в этом теге прописывается адрес картинки, которую мы хотим видеть в анонсе. Указать можно  любую картинку.</li>
+		<li>og:title — здесь указывается заголовок вашей страницы или анонса.</li>
+		<li>og:description — в этом теге и прописывается, текст анонса или описание сайта. Facebook считывает около 300 символов, поэтому больше писать не имеет смысла.</li>
+	</ol>
+	<p>
+		<a href="http://pr-cy.ru/news/p/5407">Open Graph: что это и почему каждый должен настроить</a>
+		<a href="http://ruogp.me/">Open Graph на русском</a><br>
+		<a href="https://yandex.ru/support/webmaster/open-graph/intro-open-graph.xml">Янедкс и Open Graph</a>
+	</p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="servernaa_informacia">
+								<h3>Серверная информация</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['ip']['view']">
+																					<div class="check-test test-body inactive"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['ip']['isActual']}"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">IP</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			195.208.1.108		</div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['ipCountry']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['ipCountry']['isActual']}"
+	description-id="ipCountryDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Местоположение сервера</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<img src="/assets/img/flags/ru.png" alt="Флаг страны Россия"> Россия		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="ipCountryDescription">
+	<div class="description info">
+		<p>Поисковые системы учитывают в какой стране находится сервер. В идеальном случае сервер должен быть расположен в той стране, где находится ваша целевая аудитория.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['ipIsp']['view']">
+																					<div class="check-test test-body inactive"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['ipIsp']['isActual']}"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Датацентр</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			ROSNIIROS Russian Institute for Public Networks (Autonomous Non-commercial Organization 'Regional N)
+		</div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['whoisCreationDate']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['whoisCreationDate']['isActual']}"
+	description-id="whoisCreationDateDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Возраст домена</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							2 года 2 месяца					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="whoisCreationDateDescription">
+	<div class="description success">
+		<p>Молодые и новые домены плохо продвигаются в высококонкурентных тематиках. Также важна история домена и сайта. Старые домены с плохой историей сложно продвинуть. Поисковые системы любят старые, тематические домены с хорошей историй (без фильтров, спама, черного сео и т.п.).</p> 	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['whoisExpirationDate']['view']">
+																						<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['whoisExpirationDate']['isActual']}"
+	description-id="whoisExpirationDateDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Окончание домена</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Через 9 месяцев 9 дней.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="whoisExpirationDateDescription">
+	<div class="description success">
+		<p>Не забывайте продлевать доменное имя. Лучше включить автоматическое продление у своего регистратора. После окончания регистрации домена есть шанс потерять доступ к домену.</p> 	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['ssl']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['ssl']['isActual']}"
+	description-id="sslDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">SSL-сертификат</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Сайт не доступен по HTTPS.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="sslDescription">
+	<div class="description info">
+		<p>Для продвижения сайтов коммерческой направленности важна конфиденциальность обмена информацией между сервером и посетителями. Это повышает лояльность потенциальных клиентов к ресурсу и увеличивает его уровень доверия. Это влияет на конверсию ресурса и на рост позиций в выдаче практически по всем запросам.</p>
+	<p><a href="http://pr-cy.ru/news/p/4554">Заявление Google</a></p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['wwwRedirect']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['wwwRedirect']['isActual']}"
+	description-id="wwwRedirectDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Редирект c WWW</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Перенаправление настроено.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="wwwRedirectDescription">
+	<div class="description success">
+		<p>Если сайты www.biksileev.ru и biksileev.ru работают по отдельности без редиректов. Эти две копии могут «склеится» поисковыми системами, что негативно скажется на поисковой оптимизации.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageEncoding']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['mainPageEncoding']['isActual']}"
+	description-id="mainPageEncodingDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Кодировка</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			Указана кодировка UTF-8.		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="mainPageEncodingDescription">
+	<div class="description success">
+					<p>Из-за проблемных кодировок на странице сайта могут быть проблемы с отображением некоторых спец. символов и текстов.</p>
+	<p>Мы советуем всегда использовать кодировку UTF-8.</p>			</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageTechs']['view']">
+																					<div class="check-test test-body inactive"
+	test-status="info"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Технологии</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<table class="table table-tech">
+			<tbody>
+									<tr>
+						<td><b>Фото галерея</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/OWL Carousel.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">OWL Carousel</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>Набор шрифтов</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/Google Font API.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">Google Font API</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>Веб-сервер</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/Nginx.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">Nginx</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>JavaScript фреймворки</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/jQuery.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">jQuery</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>Статистика</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/Google Analytics.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">Google Analytics</span>
+								</div>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/Yandex.Metrika.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">Yandex.Metrika</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>Язык программирования</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/PHP.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">PHP</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>Виджеты</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/OWL Carousel.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">OWL Carousel</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>CMS</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/WordPress.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">WordPress</span>
+								</div>
+													</td>
+					</tr>
+									<tr>
+						<td><b>Blog</b></td>
+						<td>
+																																								<div class="text-img">
+																		<img src="/assets/img/apps/WordPress.png"
+										alt=""
+										width="16"
+										height="16"
+										border="0"
+										align="absmiddle"
+										err_src="/assets/img/apps/default.png"
+										title=""
+									>
+									<span title="">WordPress</span>
+								</div>
+													</td>
+					</tr>
+							</tbody>
+			</table>
+		</div>
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['robotsTxt']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['robotsTxt']['isActual']}"
+	description-id="robotsTxtDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Файл robots.txt</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Файл robots.txt найден. Сайт разрешен для индексации.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="robotsTxtDescription">
+	<div class="description success">
+		<p>Файл robots.txt – это список ограничений для поисковых роботов (ботов), которые посещают сайт и сканируют информацию на нем. Перед тем как сканировать и индексировать ваш сайт, все роботы обращаются к файлу robots.txt и ищут правила.</p>
+	<p>Файл robots.txt – это простой текстовый файл, которые находится в корневом каталоге Вашего сайта. И он должен быть доступен по URL:
+<a href="//biksileev.ru/robots.txt">biksileev.ru/robots.txt</a></p>
+	<p>Есть несколько причин использовать файл robots.txt на сайте:</p>
+	<ol>
+		<li>убрать дублированный контент;</li>
+		<li>скрыть нежелательную информацию;</li>
+		<li>ограничить скорость индексации.</li>
+	</ol>
+	<a href="http://pr-cy.ru/news/p/5414">Все о robots.txt для новичков</a><br>
+	<a href="https://yandex.ru/support/webmaster/controlling-robot/robots-txt.xml" target="_blank">Подробнее о robots.txt</a>
+
+	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['sitemap']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['sitemap']['isActual']}"
+	description-id="sitemapDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Наличие Sitemap</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Как минимум одна <a href="http://biksileev.ru/sitemap.xml">карта сайта</a> найдена и доступна.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="sitemapDescription">
+	<div class="description success">
+		<p>Файл Sitemap — это файл с информацией о страницах сайта, подлежащих индексированию. Разместив этот файл на сайте, вы можете:</p>
+	<ul>
+		<li>сообщить поисковикам, какие страницы вашего сайта нужно индексировать;</li>
+		<li>как часто обновляется информация на страницах;</li>
+		<li>индексирование каких страниц наиболее важно.</li>
+	</ul>
+	<a href="http://pr-cy.ru/news/p/5433">Карта сайта (файл Sitemap) от А до Я</a><br>
+	<a href="http://www.sitemaps.org/ru/protocol.html" target="_blank">Официальная документация</a>	</div>
+</div>																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="uzabiliti" class="pageitem analysis-h2">Юзабилити</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="osnovnoe">
+								<h3>Основное</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['favicon']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['favicon']['isActual']}"
+	description-id="faviconDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Favicon</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							<img src="https://www.google.com/s2/favicons?domain=biksileev.ru" width="16" height="16" class="pull-left">&nbsp;
+				Отлично, у сайта есть Favicon.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="faviconDescription">
+	<div class="description success">
+		<p>Чтобы выделить свой сайт, используйте Favicon – картинку специального формата,
+которая отображается рядом с адресом вашего сайта в поисковой системе и в
+адресной строке.
+</p>
+<p>
+Чтобы браузеры показывали иконку вашего сайта, положите
+её в корневую папку вашего сайта. Вы можете назначить отдельным страницам
+разные иконки.
+</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['page404StatusCode']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['page404StatusCode']['isActual']}"
+	description-id="page404StatusCodeDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Код ответа страницы 404</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Все отлично, получен код 404.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="page404StatusCodeDescription">
+	<div class="description success">
+		<p>
+	При запросе страницы, которая не существует, сервер
+должен возвращать ошибку 404, то есть «страница не найдена». Данный код ответа говорит
+серверам и браузерам, что такая страница не существует.
+</p>
+<p>
+	  Если сервер настроен неправильно, и
+будет возвращаться ошибка 200 — страница существует. В связи с этим поисковые
+системы могут проиндексировать все страницы вашего сайта с ошибками.
+</p>
+<p>
+	  Настройте свой сайт так, чтобы при запросе несуществующих страниц появлялся код ответа
+404, то есть страница не найдена, или код ответа 410, то есть страница удалена.
+</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['page404BackLink']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['page404BackLink']['isActual']}"
+	description-id="page404BackLinkDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Ссылка со страницы 404</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Ссылка со страницы 404 найдена.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="page404BackLinkDescription">
+	<div class="description success">
+		<p>
+При запросе страницы, которая не существует, сервер отображает стандартную страницу с ошибкой 404.
+Для удобства пользователей рекомендуется сделать уникальную 404 страницу.
+А также добавить на эту страницу обратную ссылку на сайт.
+</p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="skorostʹ_zagruzki">
+								<h3>Скорость загрузки</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['pageSpeedLeverageBrowserCaching']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedLeverageBrowserCaching']['isActual']}"
+	description-id="pageSpeedLeverageBrowserCachingDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Кеш браузера</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							В ответе сервера отсутствуют заголовки кеширования или настроено на слишком короткое время.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedLeverageBrowserCachingDescription">
+	<div class="description fail">
+		<p>Благодаря кешированию пользователи, повторно посещающие ваш сайт, тратят меньше времени на загрузку страниц. Заголовки кеширования должны применяться ко всем кешируемым статическим ресурсам.</p>
+	<p>Включите для своего сервера кеширование в браузере. Продолжительность хранения статических ресурсов в кеше должна составлять не менее недели. Внешние ресурсы (объявления, виджеты и др.) должны храниться не менее 1 дня.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedServerResponseTime']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedServerResponseTime']['isActual']}"
+	description-id="pageSpeedServerResponseTimeDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Время ответа сервера</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Оптимизируйте время ответа сервера.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedServerResponseTimeDescription">
+	<div class="description fail">
+		<p>Время ответа сервера определяет, сколько занимает загрузка кода HTML для отображения страницы.</p>
+	<p>Уменьшите время ответа сервера, чтобы оно составляло не более 200 мс. Большое время ответа может быть связано с десятками факторов: логика приложения, медленная работа с базой данных, маршрутизация, программная платформа, библиотеки, нехватка процессорной мощности или памяти. Все эти обстоятельства следует учитывать при оптимизации.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedEnableGzipCompression']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedEnableGzipCompression']['isActual']}"
+	description-id="pageSpeedEnableGzipCompressionDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Cжатие gzip</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Включите сжатие, чтобы уменьшить объем передаваемых данных на 1,5 <span class="capslock">КБ</span> (60%).					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedEnableGzipCompressionDescription">
+	<div class="description fail">
+		<p>Многие веб-серверы могут перед отправкой сжимать файлы в формат GZIP, используя собственные процедуры или сторонние модули. Это позволяет ускорить загрузку ресурсов, необходимых для отображения веб-сайта.</p>
+	<p>Сжатие ресурсов с помощью функций gzip или deflate позволяет сократить объем данных, передаваемых по сети.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedOptimizeImages']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedOptimizeImages']['isActual']}"
+	description-id="pageSpeedOptimizeImagesDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Сжатие изображений</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Оптимизируйте изображения, чтобы уменьшить их размер на 376,6 <span class="capslock">КБ</span> (17%).					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedOptimizeImagesDescription">
+	<div class="description fail">
+		<p>Постарайтесь свести размер изображений к минимуму: это ускорит загрузку ресурсов. Правильный формат и сжатие изображений позволяет сократить их объем. Благодаря этому пользователи смогут сэкономить время и деньги.</p>
+	<p>Следует проводить базовую и расширенную оптимизацию всех изображений. В рамках базовой оптимизации обрезаются ненужные поля, уменьшается глубина цвета (до минимально приемлемого значения), удаляются комментарии и изображение сохраняется в подходящем формате. Базовую оптимизацию можно выполнить с помощью любой программы для редактирования изображений.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedMinifyResources']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedMinifyResources']['isActual']}"
+	description-id="pageSpeedMinifyResourcesDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Сократите ресурсы</div>
+		</div>
+		<div class="col-sm-8 content-test">
+																Сократите js-файлы, чтобы уменьшить их размер на 5,9 <span class="capslock">КБ</span> (27%).													</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedMinifyResourcesDescription">
+	<div class="description fail">
+		<p>Размер ресурса можно уменьшить, удалив ненужные байты, например лишние пробелы, переносы строки и отступы. Сократив код HTML, CSS и JavaScript, вы ускорите загрузку, синтаксический анализ и отображение страницы.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedPrioritizeVisibleContent']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedPrioritizeVisibleContent']['isActual']}"
+	description-id="pageSpeedPrioritizeVisibleContentDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Видимое содержание</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Содержание верхней части страницы оптимизировано.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedPrioritizeVisibleContentDescription">
+	<div class="description success">
+		<p>Если количество необходимых данных вверху страницы слишком велико, браузер пользователя будет отправлять дополнительные запросы на сервер. В среде с большой задержкой (например, в мобильных сетях) это может существенно замедлить загрузку страницы.</p>
+<p>Чтобы страница загружалась быстрее, ограничьте объем данных, которые должны отображаться в ее верхней части (код HTML, изображения, CSS, JavaScript).</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedMinimizeRenderBlockingResources']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedMinimizeRenderBlockingResources']['isActual']}"
+	description-id="pageSpeedMinimizeRenderBlockingResourcesDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">JS, CSS в верхней части</div>
+		</div>
+		<div class="col-sm-8 content-test">
+												<p>В верхней части страницы найден блокирующий CSS: 3.</p>													<p>В верхней части страницы найден блокирующий JS: 5.</p>									</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedMinimizeRenderBlockingResourcesDescription">
+	<div class="description fail">
+		<p>Перед отображением страницы браузер должен выполнить ее синтаксический анализ. Если при этом он обнаруживает внешний скрипт, он должен его загрузить. Это лишний цикл операций, который замедляет показ страницы. Также браузеры запрашивают внешние файлы CSS перед отображением контента на экране. Это приводит к задержке и замедляет обработку страницы.</p>
+	<p>Код JavaScript, необходимый для отображения верхней части страницы, должен быть встроенным, а код, отвечающий за дополнительные функции, должен выполняться после загрузки верхних элементов.</p>
+	<p>Если внешние ресурсы CSS имеют малый объем, их можно вставить непосредственно в документ HTML. Подобное встраивание позволяет браузеру продолжать загрузку страницы. Если файл CSS слишком велик, вам необходимо найти код CSS, отвечающий за контент в верхней части страницы и встроить его в HTML, отложив загрузку остальных стилей.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedAvoidLandingPageRedirects']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedAvoidLandingPageRedirects']['isActual']}"
+	description-id="pageSpeedAvoidLandingPageRedirectsDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Переадресация</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Отсутствуют.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedAvoidLandingPageRedirectsDescription">
+	<div class="description success">
+		<p>При переадресации выполняется запрос к серверу, что приводит к дополнительной задержке, поэтому количество переадресаций следует свести к минимуму. Чем меньше переадресаций, тем быстрее загружается страница. Рекомендуем вам внимательно изучить дизайн сайта и выполнить его оптимизацию для ускорения загрузки.</p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="mobilʹnostʹ" class="pageitem analysis-h2">Мобильность</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="adaptivnostʹ_dla_mobilʹnyh_ustrojstv">
+								<h3>Адаптивность для мобильных устройств</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['pageSpeedSizeContentToViewport']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedSizeContentToViewport']['isActual']}"
+	description-id="pageSpeedSizeContentToViewportDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Область экрана</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Ширина страницы превышает ширину области экрана, из-за чего пользователям придется прокручивать ее по горизонтали. Адаптируйте контент для области экрана, чтобы сделать свой сайт удобнее.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedSizeContentToViewportDescription">
+	<div class="description fail">
+		<p>Пользователи ПК и мобильных устройств привыкли выполнять вертикальную, а не горизонтальную прокрутку веб-сайтов. Если для просмотра всего содержания необходимо прокрутить сайт по горизонтали или уменьшить масштаб, это вызывает неудобства.</p>
+	<p>При разработке сайта для мобильных устройств с мета-тегом viewport вы можете случайно расположить содержание так, что оно не поместится в указанную область просмотра. Например, если изображение шире области просмотра, может возникнуть необходимость в горизонтальной прокрутке. Во избежание этого нужно изменить контент так, чтобы он помещался целиком.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['screenshotSmartphone']['view']">
+																					<div class="check-test test-body"
+	test-status="info"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['screenshotSmartphone']['isActual']}"
+	description-id="screenshotSmartphoneDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Скриншот сайта на смартфоне</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<div id="device" class="iphone">
+				<div id="devicetop" class="iphone-speaker">
+				</div>
+				<div id="screen" class="iphone-screen">
+					<img src="//s3-eu-west-1.amazonaws.com/s3.pr-cy.ru/smartphone/d06ca67d9ab75c4db4d3783c435a7ed4.png" alt="">
+				</div>
+				<a href="#"><div id="button" onclick="ipadSwitch()">
+					<div id="button-square">
+					</div>
+				</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="screenshotSmartphoneDescription">
+	<div class="description info">
+		<p>Дизайн сайта под мобильные телефоны решает три задачи: обеспечивает пользователям самый комфортный просмотр сайта с любого устройства, способствует формированию позитивного имиджа компании и положительно влияет на поисковое ранжирование сайта.</p>
+	<p>Проверьте, чтобы ваш сайт хорошо отображался на мобильных устройствах и был удобен в использовании.</p>	</div>
+</div>																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedConfigureViewport']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedConfigureViewport']['isActual']}"
+	description-id="pageSpeedConfigureViewportDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Тег viewport</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Сайт правильно отображается на всех устройствах.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedConfigureViewportDescription">
+	<div class="description success">
+					<p>Описание для области просмотра. Это значит, что мобильные устройства будут пытаться отобразить их как на ПК, уменьшая масштаб пропорционально размеру экрана. Укажите тег viewport, чтобы ваш сайт правильно отображался на всех устройствах.</p>				<p>Область просмотра определяет, как веб-страница отображается на мобильном устройстве. Если она не указана, ширина страницы считается равной стандартному значению для ПК, и она уменьшается, чтобы поместиться на экране. Благодаря области просмотра вы можете управлять шириной страницы и ее масштабированием на различных устройствах.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedSizeTapTargetsAppropriately']['view']">
+																					<div class="check-test test-body"
+	test-status="fail"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedSizeTapTargetsAppropriately']['isActual']}"
+	description-id="pageSpeedSizeTapTargetsAppropriatelyDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Размер элементов</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Некоторые ссылки и кнопки на страницах вашего сайта слишком малы.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedSizeTapTargetsAppropriatelyDescription">
+	<div class="description fail">
+		<p>Попасть пальцем в маленькие или тесно сгруппированные ссылки (кнопки) гораздо сложнее, чем указателем мыши. Чтобы пользователь мог без затруднений выбрать нужный активный элемент, они должны быть достаточно крупными, а располагать их следует на удалении друг от друга. Это сведет к минимум количество ложных нажатий. Средняя ширина подушечки пальца взрослого человека составляет 10 миллиметров, поэтому в рекомендациях по интерфейсу приложений Android рекомендуется задавать размер активных элементов не менее 7 мм, или 48 пикселей CSS на сайте с правильно настроенной областью просмотра для мобильных устройств.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedUseLegibleFontSizes']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedUseLegibleFontSizes']['isActual']}"
+	description-id="pageSpeedUseLegibleFontSizesDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Размеры шрифтов</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Размер шрифта и высота строк на вашем сайте позволяют удобно читать текст.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedUseLegibleFontSizesDescription">
+	<div class="description success">
+		<p>Одна из самых часто встречающихся проблем чтения сайтов на мобильных устройствах — это слишком маленький размер шрифта. Приходится постоянное масштабировать сайт, чтобы прочитать мелкий текст, а это очень раздражает пользователя. Даже если у сайта есть мобильная версия или адаптивный дизайн, проблема плохой читаемости из-за мелкого шрифта встречается нередко.</p>
+	<p>Используйте удобочитаемые размеры шрифтов, чтобы сделать свой сайт удобнее.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedAvoidPlugins']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedAvoidPlugins']['isActual']}"
+	description-id="pageSpeedAvoidPluginsDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Плагины</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							Плагины не найдены.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedAvoidPluginsDescription">
+	<div class="description success">
+		<p>Плагины помогают браузеру обрабатывать особый контент, например Flash, Silverlight или Java. Большинство мобильных устройств не поддерживают плагины, что приводит к множеству ошибок и нарушений безопасности в браузерах, обеспечивающих такую поддержку. В связи с этим многие браузеры ограничивают работу плагинов.</p>	</div>
+</div>
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedAvoidInterstitials']['view']">
+																					<div class="check-test test-body"
+	test-status="success"
+	ng-class="{updating: analysis.isUpdating && !analysis.tests['pageSpeedAvoidInterstitials']['isActual']}"
+	description-id="pageSpeedAvoidInterstitialsDescription"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Всплывающие окна</div>
+		</div>
+		<div class="col-sm-8 content-test">
+							На вашей странице нет всплывающих окон.					</div>
+	</div>
+</div>
+<div ng-cloak class="advice description-body" id="pageSpeedAvoidInterstitialsDescription">
+	<div class="description success">
+		<p>На многих сайтах размещены всплывающие окна или оверлеи с рекламой приложений, формами подписки и т. д. При просмотре сайтов на мобильных устройствах такие объявления частично или полностью закрывают контент, а это мало кому понравится. В некоторых случаях всплывающие объявления созданы таким образом, чтобы пользователю было сложно закрыть их. Поскольку экраны мобильных устройств обычно невелики, всплывающие объявления могут доставлять существенное неудобство.</p>	</div>
+</div>
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="poiskovye_frazy" class="pageitem analysis-h2">Поисковые фразы</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="vidimostʹ_v_andeks">
+								<h3>Видимость в Яндекс</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['megaindexYandex']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="vidimostʹ_v_google">
+								<h3>Видимость в Google</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['megaindexGoogle']['view']">
+																					<div class="box-table test-body without-icon"
+	test-status="info"
+>
+	<div paginated-table
+		table-data='[{"count":60,"position":19,"cost":4100,"keyword":"\u0430\u043d\u0430\u043b\u0438\u0437 \u0441\u0430\u0439\u0442\u0430 \u043f\u0440\u0438\u043c\u0435\u0440","impressions":12},{"count":5,"position":41,"cost":4100,"keyword":"\u043f\u0440\u043e\u0434\u0432\u0438\u0436\u0435\u043d\u0438\u0435 \u0432 \u043f\u043e\u0438\u0441\u043a\u0435","impressions":0.05}]'
+		table-template="keywordsTable"
+		table-default-sorting="{count: 'desc'}"
+	>
+		<div class="table-responsive">
+			<table class="table table-keywords table-hover">
+			<thead>
+				<tr>
+					<th>Ключевое слово</th>
+					<th>Позиции</th>
+					<th>Показов в месяц</th>
+					<th>Цена</th>
+				</tr>
+			</thead>
+			<tbody>
+									<tr>
+						<td>анализ сайта пример</td>
+						<td>19</td>
+						<td>60</td>
+						<td>4100 <i class="fa fa-rouble"></i></td>
+					</tr>
+									<tr>
+						<td>продвижение в поиске</td>
+						<td>41</td>
+						<td>5</td>
+						<td>4100 <i class="fa fa-rouble"></i></td>
+					</tr>
+							</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" id="place-78c764677cef5b4b4e76d820a97c698a" src="https://a1.pr-cy.ru/place/get/78c764677cef5b4b4e76d820a97c698a"></script>																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+													<script type="text/javascript">
+						/* Анализ пользователем */
+						window.onload = function() {
+							yaCounter30022389.reachGoal('userAnalysis')
+						}
+					</script>
+							</div>
+		</div>
+	</div>
+
+<script type="text/ng-template" id="keywordsTable">
+	<div class="table-responsive">
+		<table class="table-clear table-hover" ng-table="tableParams">
+			<tbody>
+				<tr ng-repeat="row in $data">
+					<td width="40%" data-title="'Ключевое слово'" sortable="'keyword'">[[ row.keyword ]]</td>
+					<td data-title="'Позиции'" sortable="'position'">[[ row.position ]]</td>
+					<td data-title="'Показов в месяц'" sortable="'count'">[[ row.count | number ]]</td>
+					<td data-title="'Цена'" sortable="'cost'">[[ row.cost | number ]] <i class="fa fa-rouble"></i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+<script type="text/ng-template" id="brokenlinksTable">
+	<div class="table-responsive">
+		<table class="table-clear table-hover" ng-table="tableParams">
+			<tbody>
+				<tr ng-repeat="row in $data">
+					<td data-title="'Ссылка'" sortable="'link'">
+						<div class="long-text long-text--xs">
+							<a href="[[ row.link ]]" target="_blank">
+								[[ row.link | replace : "^https?:\/\/(www\.)?biksileev.ru" : "" ]]
+							</a>
+						</div>
+					</td>
+					<td data-title="'Анкор'" sortable="'anchor'">
+						<div class="long-text long-text--xs">[[ row.anchor ]]</div>
+					</td>
+					<td data-title="'Код'" sortable="'statusCode'">
+						[[ row.statusCode ]]
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+<script type="text/ng-template" id="backlinksTable">
+	<div class="table-responsive">
+		<table class="table-newlinks table-hover" ng-table="tableParams">
+			<tbody>
+				<tr ng-repeat="row in $data">
+					<td data-title="'Ссылка'" sortable="'domainFrom'" width="35%">
+						<div class="long-text">
+							<a href="http://[[ row.domainFrom ]]" target="_blank">[[ row.domainFrom ]]</a>
+						</div>
+					</td>
+					<td data-title="'Анкор'" sortable="'linkText'" width="35%">
+						<div class="long-text">[[ row.linkText ]]</div>
+					</td>
+					<td data-title="'Качество'" sortable="'linkRank'" width="150">
+						<div class="progress" ng-if="!row.noindex && !row.nofollow">
+							<div class="progress-bar"
+								ng-style="{ width: 100 * row.linkRank / 5 + '%'}"
+							></div>
+						</div>
+						<div
+							class="progress" ng-if="row.noindex || row.nofollow"
+							tooltip="
+								[[ row.noindex ? 'noindex' : '' ]]
+								[[ row.noindex && row.nofollow ? ' + ' : '' ]]
+								[[ row.nofollow ? 'nofollow' : '' ]]
+							"
+						>
+							<div class="progress-bar progress-bar-danger"
+								ng-style="{ width: 100 * row.linkRank / 5 + '%'}"
+							></div>
+						</div>
+					</td>
+					<td data-title="'Найдена'" sortable="'add'" width="100">
+						[[ row.add|date:'shortDate' ]]
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+<script type="text/ng-template" id="keywordsGaTable">
+	<div class="table-responsive">
+		<table class="table-clear table-hover" ng-table="tableParams">
+			<tbody>
+			<tr ng-repeat="row in $data">
+				<td data-title="'Ключевое слово'" sortable="'keyword'">
+					<div class="long-text">[[ row.keyword ]]</div>
+				</td>
+				<td data-title="'Посещения'" sortable="'visits'">
+					[[ row.visits ]]
+				</td>
+				<td data-title="'Процент отказов'" sortable="'bounceRate'">
+					[[ row.bounceRate ]]
+				</td>
+				<td data-title="'Глубина просмотра'" sortable="'viewDepths'">
+					[[ row.viewDepths ]]
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+
+
+		
+			<footer class="footer-page">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<ul class="footer-page__social">
+								<li>
+									<a href="http://vk.com/prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.facebook.com/prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="http://twitter.com/prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://plus.google.com/+prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-google"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+
+							<ul class="footer-page__links">
+								<li><a href="/">Анализ сайта</a></li>
+								<li><a href="/prices/">Тарифы и цены</a></li>
+								<li><a href="http://pr-cy.ru/support/">Поддержка</a></li>
+								<li><a href="http://pr-cy.ru/disclaimer/">Соглашение</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-5 col-xs-5">
+							<div class="footer-page__login">
+																	<a href="/signup/logout" class="btn btn-gray"><i class="fa fa-unlock-alt text-white"></i> Выход</a>
+															</div>
+
+							<div class="footer-page__copyright">© PR-CY, <br class="visible-xs-block">2006—2016</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		
+		
+	
+			<script type="text/javascript">
+				var useSsl = 1;
+				var webHost = 'a.pr-cy.ru';
+				var fsHost = 's.pr-cy.ru';
+				var currentLanguage = 'ru';
+				var defaultLanguage = 'ru';
+			</script>
+							<script type="text/javascript" src="/assets/js/main.min.js?1462871806"></script>						<script type="text/javascript" src="/assets/bower_components/angular-i18n/angular-locale_ru-ru.js?1462871806"></script>
+							<!-- Google Tag Manager -->
+				<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5CMQK"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-N5CMQK');</script>
+				<!-- End Google Tag Manager -->
+					
+	<script type="text/javascript" src="/assets/components/jvectormap/jquery-jvectormap-world-mill-ru.js?1462871806"></script>
+</body>
+</html>

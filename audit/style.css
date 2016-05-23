@@ -1,0 +1,36 @@
+body{
+	font-family: 'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif;
+	width:1000px;
+}
+
+#head img{
+	width: 1000px;
+}
+
+h1{
+	text-align: center;
+}
+
+#head p{
+	text-align: justify;
+}
+
+.left{
+	width:30%;
+}
+
+.right{
+	width:50%;
+}
+
+.success{
+	background: green;
+}
+
+.unsuccess{
+	background: red;
+}
+
+.pageBreak{
+	page-break-before: always;
+}

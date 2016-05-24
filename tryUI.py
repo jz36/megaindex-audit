@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.filedialog import *
 import fileinput
-import requests
+#import requests
 import urllib.parse
 import time
 from smtplib import SMTP_SSL
@@ -123,9 +123,13 @@ def grabPRCY(fileAddr):
 	g.doc.submit()
 	output = open('Finished.txt', 'w')
 
+	j = 1
+
 	for string in fileinput.input(fileAddr):
 
 		customerList = string.split('	')
+
+		customerList[2] = clearStr(customerList[2])
 
 		g.go('https://a.pr-cy.ru/' + customerList[1])
 
@@ -314,7 +318,7 @@ def grabPRCY(fileAddr):
 E-mail: sales@biksileev.ru
 skype: ottepel_1
 www.biksileev.ru""" % customerList[1]
-		sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
+		#sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
 		#sendMail('texpomruu@yandex.ru', subject, message, 'audit/' + customerList[1] + '.pdf')
 		#time.sleep(10)
 		print(customerList[0])
@@ -322,9 +326,19 @@ www.biksileev.ru""" % customerList[1]
 		customerList.append('Отправлено')
 		output.write('	'.join(customerList))
 		output.write('\n')
+		text1.delete('1.0', str(len('	'.join(customerList) + '\n') + 1) + '.0') 
+		text1.insert(str(j) + '.0', '	'.join(customerList) + '\n')
+		text1.update()
 	output.close()
 
+
+
+def openFile( event ):
+	askopenfilename()
+
 root = Tk()
+
+text1=Text(root,height=3,width=70,font='Arial 12',wrap=WORD)
 
 mainFrame = Frame(root,width=500,height=100,bd=5)
 
@@ -332,9 +346,27 @@ op = askopenfilename()
 
 buttonStart = Button(mainFrame, text='Start')
 
+'''nameLabel = Label(mainFrame, text="Ваше ФИО (полностью)")
+
+nameEntry = Entry(mainFrame)
+
+nameLabel = Label(mainFrame, text="Ваше ФИО (полностью)")
+
+nameEntry = Entry(mainFrame)
+
+nameLabel = Label(mainFrame, text="Ваше ФИО (полностью)")
+
+nameEntry = Entry(mainFrame)
+'''
 buttonStart.bind("<Button-1>", proof2)
 
+#op.bind("<Button-1>", openFile)
+
 mainFrame.pack()
+
+text1.pack()
+
+#op.pack()
 
 buttonStart.pack()
 

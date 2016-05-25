@@ -32,8 +32,6 @@ def indexSite(site, customerEmail, customerFIO):
 		'count_page': '30'
 	}
 
-	#pdb.set_trace()
-
 	firstResponse = requests.get(BASE_URL, params=paramsForReIndex)
 	firstJson = firstResponse.json()
 
@@ -94,7 +92,6 @@ def sendMail(emailTo, subject, msgText, fileAddr):
 	smtp.quit()
 
 def proof(event):
-	#pdb.set_trace()
 	print('Start work!')
 	indexSite(siteEntry.get(), emailEntry.get(), nameEntry.get())
 	print('Done!')
@@ -148,7 +145,7 @@ def grabPRCY(fileAddr):
 		</head>
 		<body>
 			<div id="head">
-				<img src="biksileev.jpg"/>
+				<!--<img src="biksileev.jpg"/>-->
 				<h1>Технический аудит сайта http://''' + customerList[1] + '''</h1>
 				<p>Для чёткого понимания текущего технического состояния сайта http://''' + customerList[1] + '''
 был проведён полный технический аудит, результаты которого представлены ниже в виде таблицы.</p></div>''')
@@ -275,10 +272,6 @@ def grabPRCY(fileAddr):
 			newList3 = name.cssselect('.description p')
 			for paragraph in newList3:
 			f.write(paragraph.text)'''
-			f.write('</tr>')
-				#f.write('</td></tr>')
-				#f.write('\n')
-		print(i)
 		f.write('</tbody>')
 		f.write('</table>')
 		f.write('''<p> Резолюция
@@ -318,11 +311,7 @@ def grabPRCY(fileAddr):
 E-mail: sales@biksileev.ru
 skype: ottepel_1
 www.biksileev.ru""" % customerList[1]
-		#sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
-		#sendMail('texpomruu@yandex.ru', subject, message, 'audit/' + customerList[1] + '.pdf')
-		#time.sleep(10)
-		print(customerList[0])
-		print(customerList[2])
+		sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
 		customerList.append('Отправлено')
 		output.write('	'.join(customerList))
 		output.write('\n')

@@ -113,11 +113,11 @@ def grabPRCY(fileAddr):
 
 	g = Grab()
 
-	g.go('https://id.pr-cy.ru/signup/login/')
-
-	g.doc.set_input('login_email','neo@biksileev.ru') 
-	g.doc.set_input('password','biksileev')
-	g.doc.submit()
+	'''g.go('https://id.pr-cy.ru/signup/login/')
+			
+				g.doc.set_input('login_email','neo@biksileev.ru') 
+				g.doc.set_input('password','biksileev')
+				g.doc.submit()'''
 	output = open('Finished.txt', 'w')
 
 	j = 1
@@ -145,7 +145,7 @@ def grabPRCY(fileAddr):
 		</head>
 		<body>
 			<div id="head">
-				<!--<img src="biksileev.jpg"/>-->
+				<img src="biksileev.jpg"/>
 				<h1>Технический аудит сайта http://''' + customerList[1] + '''</h1>
 				<p>Для чёткого понимания текущего технического состояния сайта http://''' + customerList[1] + '''
 был проведён полный технический аудит, результаты которого представлены ниже в виде таблицы.</p></div>''')
@@ -311,7 +311,7 @@ def grabPRCY(fileAddr):
 E-mail: sales@biksileev.ru
 skype: ottepel_1
 www.biksileev.ru""" % customerList[1]
-		sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
+		#sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
 		customerList.append('Отправлено')
 		output.write('	'.join(customerList))
 		output.write('\n')

@@ -1,10 +1,10 @@
 body{
 	font-family: 'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif;
-	width:1000px;
+	width:600px;
 }
 
 #head img{
-	width: 1000px;
+	width: 600px;
 }
 
 h1{
@@ -31,6 +31,6 @@ h1{
 	background: red;
 }
 
-.pageBreak{
+/*.pageBreak{
 	page-break-before: always;
-}
+}*/

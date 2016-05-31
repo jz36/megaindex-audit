@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.filedialog import *
 import fileinput
-#import requests
+import requests
 import urllib.parse
 import time
 from smtplib import SMTP_SSL
@@ -12,9 +12,7 @@ from email.mime.base import MIMEBase
 from email import encoders as Encoders
 import os
 from pdb import set_trace
-#from wkhtmltopdfwrapper import WKHtmlToPdf
-from weasyprint import HTML
-from selenium import webdriver
+from wkhtmltopdfwrapper import WKHtmlToPdf
 
 
 def indexSite(site, customerEmail, customerFIO):
@@ -107,6 +105,8 @@ def proof2(event):
 
 def grabPRCY(fileAddr):
 	from grab import Grab
+	
+	file = WKHtmlToPdf()
 
 	def clearStr( string ):
 		if type(string) != type(None):
@@ -123,19 +123,15 @@ def grabPRCY(fileAddr):
 
 	j = 1
 
-	phant = webdriver.PhantomJS()
-
 	for string in fileinput.input(fileAddr):
 
 		customerList = string.split('	')
 
 		customerList[2] = clearStr(customerList[2])
 
-		phant.get('https://a.pr-cy.ru/' + customerList[1])
+		g.go('https://a.pr-cy.ru/' + customerList[1])
 
 		time.sleep(60)
-
-		g.go('https://a.pr-cy.ru/' + customerList[1])
 
 		newList = g.css_list('.is')
 
@@ -144,12 +140,21 @@ def grabPRCY(fileAddr):
 		i = 0
 
 		f = open('audit/' + customerList[1] + '.html','w')
-		f.write('''<!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8" />
-			<link rel='stylesheet' href="style.css">
-		</head>
+		f.write('''<!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
+<document filename="''' + customerList[1] + '''.pdf" invariant="1">
+		<template pageSize="a4" leftMargin="72" showBoundary="1"
+    author="A.N. Author"
+    subject="My subject"
+    title="My title"
+    creator="My creator"
+	displayDocTitle="1"
+	lang="en-US"
+    >
+    <pageTemplate id="main" pageSize="a4">
+    <setFont name="Lucida Grande" size="18"/>
+    <pageGraphics>
+    	<image file="biksileev.jpg"width="1000"/>
+    </pageGraphics>
 		<body>
 			<div id="head">
 				<img src="biksileev.jpg"/>
@@ -288,9 +293,7 @@ def grabPRCY(fileAddr):
 		</html>
 			''')
 		f.close()
-		file = HTML(filename="audit/" + customerList[1] + ".html")
-		file.render().write_pdf(target="audit/" + customerList[1] + ".pdf")
-		#file.render('file://' + os.getcwd() + '/audit/' + customerList[1] + '.html', 'audit/' + customerList[1] + '.pdf')
+		file.render('file://' + os.getcwd() + '/audit/' + customerList[1] + '.html', 'audit/' + customerList[1] + '.pdf')
 		subject = customerList[0] + ' - подготовили аудит вашего сайта: ' + customerList[1]
 		message = customerList[0] + """, добрый день!
 
@@ -321,7 +324,7 @@ def grabPRCY(fileAddr):
 E-mail: sales@biksileev.ru
 skype: ottepel_1
 www.biksileev.ru""" % customerList[1]
-		#sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
+		sendMail(customerList[2], subject, message, 'audit/' + customerList[1] + '.pdf')
 		customerList.append('Отправлено')
 		output.write('	'.join(customerList))
 		output.write('\n')
@@ -329,7 +332,6 @@ www.biksileev.ru""" % customerList[1]
 		text1.insert(str(j) + '.0', '	'.join(customerList) + '\n')
 		text1.update()
 	output.close()
-	phant.quit()
 
 
 

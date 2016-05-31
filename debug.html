@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app='AnalysisApp'>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+	<meta name="description" content="Анализ сайта agroup-story.ru: Индексация, Трафик, Ключевые слова, Социальные сети. Подробная информация.">
+	<meta property="og:title" content="Подробный анализ сайта — agroup-story.ru">
+	<meta property="og:description" content="Анализ сайта agroup-story.ru: Индексация, Трафик, Ключевые слова, Социальные сети. Подробная информация.">
+		<meta property="og:type" content="website">
+	<meta property="og:url" content= "https://a.pr-cy.ru/agroup-story.ru/">
+
+
+		
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon16x16.png" sizes="16x16" />
+		<meta name="application-name" content="Избранные сайты"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="/assets/img/mstile-144x144.png" />
+		<meta name="referrer" content="unsafe-url">
+		
+
+		<title>Анализ cайта agroup-story.ru</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css?1464268404">		<link rel="canonical" href="https://a.pr-cy.ru/agroup-story.ru/" />
+	</head>
+	<body ng-controller="RootCtrl">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-74406780-1', 'auto', 'ExtendedTracker');
+			
+		ga('ExtendedTracker.set', 'title', 'Анализ сайта');
+	ga('ExtendedTracker.set', 'page', '/*/');
+	
+						ga('ExtendedTracker.set', 'userId', '274547');
+						ga('ExtendedTracker.send', 'pageview');
+		</script>
+		
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">
+							<img src="/assets/img/logo.svg" alt="" />
+						</a>
+						<button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+							<span class="sr-only">Меню</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse" collapse="navCollapsed">
+						<ul class="nav navbar-nav navbar-right">
+															<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="//s.pr-cy.ru/userpics/274547_thumb.png" err-src="/assets/img/no-avatar.svg" class="img-circle navbar-avatar" tooltip-placement="left" tooltip="neoBiksileev">
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="//id.pr-cy.ru">Мой профиль</a></li>
+									<li><a href="//id.pr-cy.ru/user/messages/#/list">Личные сообщения</a></li>
+									<li><a href="//id.pr-cy.ru/user/balance/#/refill">Баланс</a></li>
+									<li class="divider"></li>
+									<li><a href="/signup/logout">Выйти</a></li>
+								</ul>
+								</li>
+													</ul>
+						<ul class="nav navbar-nav">
+							<li><a href="/">Анализ сайта</a></li>
+							<li><a href="/prices/">Тарифы и цены</a></li>
+															<li><a href="/pdf/settings/">Отчеты PDF</a></li>
+																				</ul>
+					</div>
+				</div>
+			</nav>
+		
+		
+		<div class="notify">
+	<div ng-init='alertService.init(null)'>
+		<alert
+			ng-cloak
+			ng-repeat="alert in alerts"
+			type="[[ alert.type ]]"
+			close="alertService.close($index)"
+		>
+			<div ng-bind-html="alert.msg"></div>
+		</alert>
+	</div>
+</div>
+		
+
+<div ng-controller="AnalysisCtrl"
+	ctrl-init='{"domain":"agroup-story.ru","dateUpdatedInfo":"\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u043e \u0441\u0435\u0439\u0447\u0430\u0441.","isUpdating":false,"isPdfGenerating":false,"pdfLink":null,"isExpired":true,"isFavorite":false,"isAdvanced":false,"started":null,"tests":[],"allTestsCount":80,"userCanUpdate":true,"userCanForceUpdate":true,"forceUpdatesTooltip":"\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u043e 0 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439 \u0438\u0437 0  \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u0445 \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0442\u0435\u043a\u0443\u0449\u0435\u043c\u0443 \u0442\u0430\u0440\u0438\u0444\u0443","forceUpdatesLimit":"0","forceUpdatesUsed":0,"userCanMakeReport":false,"userHasAdvancedAnalysis":false}'
+>
+	<div ng-cloak ng-show="analysis.isUpdating" id="loading-bar"><div class="bar" ng-style="{width: analysis.progress + '%'}"><div class="peg"></div></div></div>
+	<div ng-cloak ng-show="analysis.isUpdating" id="loading-bar-spinner"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+	<div class="jumbotron-small">
+		<div class="container">
+			<form id="analysis" class="analysis-form">
+	<div class="input-group input-group-lg">
+		<input type="text" class="form-control" placeholder="Введите сайт, например: site.ru" ng-model="analysis.domain" required />
+
+		<span class="input-group-btn">
+			<button ng-click="analyse()" type="submit" class="btn btn-default"><span class="hidden-xs">Анализировать</span><span class="visible-xs-block">GO</span></button>
+		</span>
+	</div>
+	<span class="input-error" ng-cloak ng-show="analysis.isDomainError"><i class="fa fa-times-circle"></i> Неверный формат доменного имени.</span>
+</form>		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+				<!-- social share -->
+				<link rel="stylesheet" href="https://sociale.ru/assets/style-minimal.css">
+				<div class="sharing-buttons" data-url="https://a.pr-cy.ru" data-counters="true">
+					<p>Делитесь сервисом со всеми, кто продвигает сайты:</p>
+					<div class="vkontakte"></div>
+					<div class="facebook"></div>
+					<div class="twitter"></div>
+					<div class="google-plus"></div>
+				</div>
+				<script type="text/javascript" src="https://sociale.ru/assets/share.min.js"></script>
+				<!-- END: social share -->
+									<div class="start-advanced"
+						ng-cloak
+						ng-if="!analysis.isAdvanced"
+					>
+						<button class="btn btn-warning btn-block"
+							ng-controller="AdvancedDomainsCtrl"
+							ng-show="!analysis.userHasAdvancedAnalysis"
+							ng-click="addAdvanced('agroup-story.ru', true)"
+						>
+							<i class="fa fa-rocket"></i> Провести расширенный анализ						</button>
+						<a class="btn btn-warning btn-block" href="/advanced/agroup-story.ru/"
+							ng-show="analysis.userHasAdvancedAnalysis"
+						>
+							<i class="fa fa-rocket"></i> Перейти к расширенному анализу						</a>
+					</div>
+								<pagemenu affix></pagemenu>
+									<div affix class="slider-before">
+						<script type="text/javascript" id="place-ac5123d274eb8bf8c3f1b741c378155c" src="https://a1.pr-cy.ru/place/get/ac5123d274eb8bf8c3f1b741c378155c?site=agroup-story.ru"></script>
+						<script type="text/javascript" id="place-78127a2dd92422f96ae843139706f8fa" src="https://a1.pr-cy.ru/place/get/78127a2dd92422f96ae843139706f8fa?site=agroup-story.ru"></script>
+					</div>
+							</div>
+			<div class="col-lg-9" id="analysis" pageitems selector="pageitem" topmargin="20">
+				<div class="row make-signup" ng-if="analysis.isExpired && !analysis.isUpdating && !analysis.userCanUpdate" ng-cloak>
+					<i class="icon icon-uniE785"></i>
+					<div class="content">
+						<h2>Анализ не завершен!</h2>
+						<p class="p-list">Доступ для гостей ограничен. После регистрации будет доступен полный функционал сервиса:</p>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-check green"></i> неограниченное число проверок сайтов;</li>
+							<li><i class="fa-li fa fa-check green"></i> избранные сайты;</li>
+							<li><i class="fa-li fa fa-check green"></i> доступ к более чем 70 тестам анализа.</li>
+						</ul>
+						<a href="/signup/oauthGetLoginUrl?r=%2Fagroup-story.ru%2F" class="btn btn-success">Получить доступ</a>
+					</div>
+				</div>
+				<div class="analysis-head-box">
+					<div class="advanced-domain" ng-cloak ng-show="analysis.isAdvanced" >Расширенный анализ</div>
+					<div class="row content">
+						<div class="col-sm-4">
+							<div class="site-screen hidden-xs" ng-cloak trusted-html="analysis.tests['screenshotDesktop']['view']">
+																	<img ng-cloak ng-show="analysis.isUpdating" src="/assets/img/loadingScreen.png">
+									<img ng-cloak ng-show="!analysis.isUpdating" src="/assets/img/noscreen.png">
+															</div>
+						</div>
+						<div class="col-sm-8">
+							<h1><a href="http://agroup-story.ru" target="_blank" rel="nofollow">agroup-story.ru</a></h1>
+							<div class="refresh" ng-cloak ng-show="!analysis.isUpdating">
+								[[ analysis.dateUpdatedInfo ]]
+							</div>
+							<div class="refresh" ng-cloak ng-show="analysis.isUpdating">
+								Обновляется сейчас...							</div>
+							<div class="info-progress" ng-cloak>
+	Оценка сайта – [[ analysis.getTotalScore() ]]%
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" ng-style="{ width: analysis.getTotalScore() + '%' }"></div>
+	</div>
+</div>
+<div class="info-progress-small">
+	<div class="row" ng-cloak>
+		<div class="col-sm-4"
+			ng-click="filterAnalysisResults('success')"
+			ng-class="{
+				'inactive-filter': !analysis.filter.success,
+				'active-filter': analysis.isFilterApplied && analysis.filter.success
+			}"
+		>
+			<span><ng-pluralize count="analysis.counters.success" when="{'0': 'Нет успешных тестов', 'one': '{} успешный тест', 'few': '{} успешных теста', 'many': '{} успешных тестов'}"></ng-pluralize></span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" ng-style="{ width: analysis.getScore('success') + '%' }"></div>
+			</div>
+		</div>
+		<div class="col-sm-4"
+			ng-click="filterAnalysisResults('fail')"
+			ng-class="{
+				'inactive-filter': !analysis.filter.fail,
+				'active-filter': analysis.isFilterApplied && analysis.filter.fail
+			}"
+		>
+			<span><ng-pluralize count="analysis.counters.fail" when="{'0': 'Нет ошибок', 'one': '{} ошибка', 'few': '{} ошибки', 'many': '{} ошибок'}"></ng-pluralize></span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" ng-style="{ width: analysis.getScore('fail') + '%' }"></div>
+			</div>
+		</div>
+		<div class="col-sm-4"
+			ng-click="filterAnalysisResults('info')"
+			ng-class="{
+				'inactive-filter': !analysis.filter.info,
+				'active-filter': analysis.isFilterApplied && analysis.filter.info
+			}"
+		>
+			<span><ng-pluralize count="analysis.counters.info" when="{'0': 'Нет инф. сообщений', 'one': '{} инф. сообщение', 'few': '{} инф. сообщения', 'many': '{} инф. сообщений'}"></ng-pluralize></span>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" ng-style="{ width: analysis.getScore('info') + '%' }"></div>
+			</div>
+		</div>
+	</div>
+</div>						</div>
+					</div>
+					<div class="more hidden-xs">
+													<span ng-controller="FavoriteDomainsCtrl">
+								<a ng-cloak ng-show="!analysis.isFavorite" ng-click="analysis.isFavorite = true; addFavorite('agroup-story.ru')"><i class="fa fa-star-o"></i> Добавить в избранное</a>
+								<a ng-cloak ng-show="analysis.isFavorite" ng-click="analysis.isFavorite = false; deleteFavorite('agroup-story.ru')"><i class="fa fa-star"></i> Удалить из избранного</a>
+							</span>
+							<button
+								ng-cloak
+								ng-show="!analysis.pdfLink"
+								ng-disabled="analysis.isPdfGenerating || analysis.isUpdating || !analysis.userCanMakeReport"
+								ng-click="generatePdf()"
+							>
+								<img class="icon" ng-show="!analysis.isPdfGenerating" src="/assets/img/icon-pdf.svg">
+								<img class="icon fa-spin" ng-show="analysis.isPdfGenerating" src="/assets/img/icon-updating.svg">
+								Создать PDF							</button>
+							<i
+								class="fa fa-question chart ng-scope"
+								ng-cloak
+								ng-if="!analysis.isPdfGenerating && !analysis.userCanMakeReport && !analysis.pdfLink"
+								tooltip="Лимит генерации PDF-отчетов исчерпан"
+								tooltip-placement="top"
+							></i>
+							<a ng-cloak ng-show="!analysis.isPdfGenerating && analysis.pdfLink" ng-href="[[ analysis.pdfLink ]]" target="_blank">
+								<img class="icon" src="/assets/img/icon-save.svg"> Скачать PDF							</a>
+															<button
+									ng-disabled="analysis.isUpdating"
+									ng-click="forceUpdate()"
+									tooltip="[[ analysis.forceUpdatesTooltip ]]"
+								>
+									<i class="fa fa-refresh"></i> Перепроверить								</button>
+																									</div>
+				</div>
+
+									<div class="announce">
+						<div class="row">
+							<div class="col-sm-4">
+								<script type="text/javascript" id="place-3d041f6ee0852bdec0311be7db3fa6de" src="https://a1.pr-cy.ru/place/get/3d041f6ee0852bdec0311be7db3fa6de?site=agroup-story.ru"></script>
+							</div>
+							<div class="col-sm-4">
+								<script type="text/javascript" id="place-cdfb6ac89d79e3fc1a674250009b412a" src="https://a1.pr-cy.ru/place/get/cdfb6ac89d79e3fc1a674250009b412a?site=agroup-story.ru"></script>
+							</div>
+							<div class="col-sm-4">
+								<script type="text/javascript" id="place-94b1f162fe01cc44e9fc947ca118aca1" src="https://a1.pr-cy.ru/place/get/94b1f162fe01cc44e9fc947ca118aca1?site=agroup-story.ru"></script>
+							</div>
+						</div>
+					</div>
+								<div class="events box-analysis" ng-cloak ng-show="analysis.timeline['count'] > 0">
+					<div class="tests-group">
+						<div class="box-title">
+							<h3>Последние события</h3>
+						</div>
+						<div class="box-content" trusted-html="analysis.timeline['view']">
+							<div ng-init="analysis.timeline['count']=0">
+</div>						</div>
+					</div>
+					<div class="more" ng-show="analysis.timeline['count'] > 3">
+						<a ng-click="analysis.timeline['expand'] = !analysis.timeline['expand']" >Показать всё</a>
+					</div>
+				</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="poiskovye_sistemy" class="pageitem analysis-h2">Поисковые системы</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="osnovnye_parametry">
+								<h3>Основные параметры</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexCitation']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['yandexRank']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googlePageRank']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="indeksacia">
+								<h3>Индексация</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexIndex']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googleIndex']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="katalogi">
+								<h3>Каталоги</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexCatalog']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['dmozCatalog']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mailruCatalog']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['ramblerTop']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="sankcii">
+								<h3>Санкции</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexGlue']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['yandexAgs']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['roskomnadzor']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="proverka_na_virusy">
+								<h3>Проверка на вирусы</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['yandexSafeBrowsing']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googleSafeBrowsing']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dopolnitelʹnye_ssylki">
+								<h3>Дополнительные ссылки</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="test-body box-text"
+	test-status="info"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<p>
+				<a href="http://yandex.ru/yandsearch?text=agroup-story.ru&lr=0&noreask=1" target="_blank" rel="nofollow">Упоминания сайта в поиске</a>
+			</p>
+			<p>
+				<a href="http://blogs.yandex.ru/search.xml?text=link%3D%22http%3A%2F%2Fagroup-story.ru%22&group=2&ft=all" target="_blank" rel="nofollow">Пишут о сайте в блогах</a>
+			</p>
+			<p>
+				<a href="http://images.yandex.ru/yandsearch?itype=any&site=agroup-story.ru" target="_blank" rel="nofollow">Картинки сайта в поиске</a>
+			</p>
+			<p>
+				<a href="http://yandex.ru/yandsearch?text=host:agroup-story.ru+|+host:www.agroup-story.ru&how=tm" target="_blank" rel="nofollow">Индекс с датой индексации</a>
+			</p>
+			<p>
+				<a href="http://news.yandex.ru/yandsearch?text=agroup-story.ru&rpt=nnews2" target="_blank" rel="nofollow">Что пишут в новостях</a>
+			</p>
+			<p>
+				<a href="http://wayback.archive.org/web/*/http://agroup-story.ru" target="_blank" rel="nofollow">История в веб-архив</a>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<p>
+				<a href="http://yandex.ru/infected?url=agroup-story.ru" target="_blank" rel="nofollow">Проверить на вирусы</a>
+			</p>
+			<p>
+				<a href="http://webmaster.yandex.ru/spellcheck.xml?checkurl=agroup-story.ru" target="_blank" rel="nofollow">Проверка орфографии на сайте</a>
+			</p>
+
+			<p>
+				<a href="http://yandex.ru/yandsearch?text=url%3Aagroup-story.ru%20%7C%20url%3Aagroup-story.ru" target="_blank" rel="nofollow">Кэш главной страницы</a>
+			</p>
+
+			<p>
+				<a href="http://pr-cy.ru/headers/agroup-story.ru" target="_blank" rel="nofollow">Проверка HTTP заголовков</a>
+			</p>
+			<p>
+				<a href="http://www.copyscape.com/?q=agroup-story.ru" target="_blank" rel="nofollow">Поиск плагиата</a>
+			</p>
+			<p>
+				<a href="http://goo.gl/ThfZBu" target="_blank" rel="nofollow">Усилить видимость в новостях</a>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<p>
+				<a href="https://www.google.com/search?q=link:agroup-story.ru" target="_blank" rel="nofollow">Ссылаются на сайт</a>
+			</p>
+			<p>
+				<a href="http://www.google.ru/search?safe=off&tbo=1&tbs=blg%3A1&q=link%3Aagroup-story.ru&btnG=%CF%EE%E8%F1%EA&lr=&aq=f&oq=" target="_blank" rel="nofollow">Пишут о сайте в блогах</a>
+			</p>
+			<p>
+				<a href="http://www.google.ru/search?q=site:agroup-story.ru&tbm=isch" target="_blank" rel="nofollow">Картинки сайта в поиске</a>
+			</p>
+			<p>
+				<a href="https://www.google.com/search?hl=ru&q=info:agroup-story.ru" target="_blank" rel="nofollow">Проверка склейки домена</a>
+			</p>
+			<p>
+				<a href="https://www.google.ru/search?q=related:agroup-story.ru/&filter=0" target="_blank" rel="nofollow">Похожие сайты в поиске</a>
+			</p>
+			<p>
+				<a href="https://www.google.ru/search?q=site:agroup-story.ru%2F%26&filter=0" target="_blank" rel="nofollow">Страницы не под фильтром</a>
+			</p>
+		</div>
+	</div>
+</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="knopka_dla_sajta">
+								<h3>Кнопка для сайта</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="test-body box-text"
+	test-status="info"
+>
+	<p>Предлагаем вам разместить нашу кнопку на сайт. Данная кнопка указывает на компетенцию владельца ресурса и дает возможность быстро перейти к анализу вашего сайта.</p>	<div class="row">
+		<div class="col-sm-2">
+			<img src="/assets/img/analysis-counter.png" width="88" height="31">
+		</div>
+		<div class="col-sm-9">
+			<textarea class="form-control" onclick="this.focus();this.select()" readonly="readonly"><a href="//a.pr-cy.ru/agroup-story.ru" target="_blank"><img src="//a.pr-cy.ru/assets/img/analysis-counter.png" width="88" height="31" alt="Analysis"></a></textarea>
+		</div>
+	</div>
+
+</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="trafik" class="pageitem analysis-h2">Трафик</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="analitika">
+								<h3>Аналитика</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['statisticsGoogleUsers']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['statisticsGoogleHits']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['statisticsGoogleBounceRate']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="analitika">
+								<h3>Аналитика</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="check-test test-body inactive"
+	test-status="info"
+	ng-cloak
+	ng-if="!analysis.isAdvanced"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Аналитика</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<p class="p-list">Собирайте информацию и изменения статистики вашего сайта, подключив Google Analytics. Узнайте динамику:</p>
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-check green"></i> просмотров;</li>
+				<li><i class="fa-li fa fa-check green"></i> посетителей;</li>
+				<li><i class="fa-li fa fa-check green"></i> отказов.</li>
+			</ul>
+							<div ng-controller="AdvancedDomainsCtrl">
+					<button class="btn btn-warning"
+						ng-show="!analysis.userHasAdvancedAnalysis"
+						ng-disabled="analysis.isUpdating"
+						ng-click="addAdvanced('agroup-story.ru', true)"
+					>
+						<i class="fa fa-rocket"></i> Провести расширенный анализ					</button>
+					<a class="btn btn-warning" href="/advanced/agroup-story.ru/"
+						ng-show="analysis.userHasAdvancedAnalysis"
+					>
+						<i class="fa fa-rocket"></i> Перейти к расширенному анализу					</a>
+				</div>
+					</div>
+	</div>
+</div>																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="klucevye_slova">
+								<h3>Ключевые слова</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['keywordsGa']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="posesaemostʹ">
+								<h3>Посещаемость</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['alexaTraffic']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['alexaRank']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['alexaTrafficMap']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['webomerGender']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['alexaRelatedSites']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['statisticsSystems']['view']">
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="ssylki_na_sajt" class="pageitem analysis-h2">Ссылки на сайт</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="obratnye_ssylki">
+								<h3>Обратные ссылки</h3>
+							</div>
+												<div class="box-content">
+																								<div
+	class="check-test test-body inactive"
+	test-status="info"
+	ng-cloak
+	ng-if="!analysis.isAdvanced"
+>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="info-test">Обратные ссылки</div>
+		</div>
+		<div class="col-sm-8 content-test">
+			<p class="p-list"><p class="p-list">Следите за новыми обратными ссылками на сайта. Узнайте о:</p>
+	<ul class="fa-ul">
+		<li><i class="fa-li fa fa-check green"></i> новых добавленных ссылках;</li>
+		<li><i class="fa-li fa fa-check green"></i> качестве ссылок;</li>
+		<li><i class="fa-li fa fa-check green"></i> анкорах.</li>
+	</ul></p>
+							<div ng-controller="AdvancedDomainsCtrl">
+					<button class="btn btn-warning"
+						ng-disabled="analysis.isUpdating"
+						ng-click="addAdvanced('agroup-story.ru', true)"
+					>
+						<i class="fa fa-rocket"></i> Провести расширенный анализ					</button>
+				</div>
+					</div>
+	</div>
+</div>																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dannye_<a_href=httpswwwmegaindexrufrom=56014_target=blank>megaindex<a>">
+								<h3>Данные <a href="https://www.megaindex.ru/?from=56014" target="_blank">MegaIndex</a></h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['megaindexLinksCount']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['megaindexDomainsCount']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['megaindexBacklinks']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dannye_linkpad">
+								<h3>Данные LinkPad</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['solomonoDataHrefs']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['solomonoDataDonors']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="dannye_majesticseo">
+								<h3>Данные MajesticSEO</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['majesticExtbackLinks']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['majesticRefDomains']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['majesticTrustFlow']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['majesticCitationFlow']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="socialʹnye_seti">
+								<h3>Социальные сети</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['socialCounters']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['facebookSocial']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['vkontakteSocial']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['googlePlusSocial']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['twitterSocial']['view']">
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="optimizacia" class="pageitem analysis-h2">Оптимизация</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="kontent">
+								<h3>Контент</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['mainPageTitle']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageDescription']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageHeaders']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageWordsCount']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageTextLength']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageSickness']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPagePageSize']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['loadTime']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageInternalLinks']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageExternalLinks']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageBrokenLinks']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['htmlValidator']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['wot']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['microdataSchemaOrg']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['microdataOpenGraph']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="servernaa_informacia">
+								<h3>Серверная информация</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['ip']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['ipCountry']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['ipIsp']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['whoisCreationDate']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['whoisExpirationDate']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['ssl']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['wwwRedirect']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageEncoding']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['mainPageTechs']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['robotsTxt']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['sitemap']['view']">
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="uzabiliti" class="pageitem analysis-h2">Юзабилити</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="osnovnoe">
+								<h3>Основное</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['favicon']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['page404StatusCode']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['page404BackLink']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="skorostʹ_zagruzki">
+								<h3>Скорость загрузки</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['pageSpeedLeverageBrowserCaching']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedServerResponseTime']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedEnableGzipCompression']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedOptimizeImages']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedMinifyResources']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedPrioritizeVisibleContent']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedMinimizeRenderBlockingResources']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedAvoidLandingPageRedirects']['view']">
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="mobilʹnostʹ" class="pageitem analysis-h2">Мобильность</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="adaptivnostʹ_dla_mobilʹnyh_ustrojstv">
+								<h3>Адаптивность для мобильных устройств</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['pageSpeedSizeContentToViewport']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['screenshotSmartphone']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedConfigureViewport']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedSizeTapTargetsAppropriately']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedUseLegibleFontSizes']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedAvoidPlugins']['view']">
+																			</div>
+																																<div class="is" trusted-html="analysis.tests['pageSpeedAvoidInterstitials']['view']">
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+										<div class="tests-block" ng-cloak show-if-has=".tests-group .test-body:not(.excluded)">
+				<h2 id="poiskovye_frazy" class="pageitem analysis-h2">Поисковые фразы</h2>
+		<div class="box-analysis">
+												<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="vidimostʹ_v_andeks">
+								<h3>Видимость в Яндекс</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['megaindexYandex']['view']">
+																			</div>
+																					</div>
+					</div>
+																<div class="tests-group" ng-cloak show-if-has=".test-body:not(.excluded)">
+																				<div class="box-title" id="vidimostʹ_v_google">
+								<h3>Видимость в Google</h3>
+							</div>
+												<div class="box-content">
+																								<div class="is" trusted-html="analysis.tests['megaindexGoogle']['view']">
+																			</div>
+																					</div>
+					</div>
+									</div>
+	</div>
+				
+									<script type="text/javascript" id="prcy-qa-widget" src="//a2.pr-cy.ru/qa-widget.php"></script>
+				
+									<script type="text/javascript">
+						/* Анализ пользователем */
+						window.onload = function() {
+							yaCounter30022389.reachGoal('userAnalysis')
+						}
+					</script>
+							</div>
+		</div>
+	</div>
+
+<script type="text/ng-template" id="keywordsTable">
+	<div class="table-responsive">
+		<table class="table-clear table-hover" ng-table="tableParams">
+			<tbody>
+				<tr ng-repeat="row in $data">
+					<td width="40%" data-title="'Ключевое слово'" sortable="'keyword'">[[ row.keyword ]]</td>
+					<td data-title="'Позиции'" sortable="'position'">[[ row.position ]]</td>
+					<td data-title="'Показов в месяц'" sortable="'count'">[[ row.count | number ]]</td>
+					<td data-title="'Цена'" sortable="'cost'">[[ row.cost | number ]] <i class="fa fa-rouble"></i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+<script type="text/ng-template" id="brokenlinksTable">
+	<div class="table-responsive">
+		<table class="table-clear table-hover" ng-table="tableParams">
+			<tbody>
+				<tr ng-repeat="row in $data">
+					<td data-title="'Ссылка'" sortable="'link'">
+						<div class="long-text long-text--xs">
+							<a href="[[ row.link ]]" target="_blank">
+								[[ row.link | replace : "^https?:\/\/(www\.)?agroup-story.ru" : "" ]]
+							</a>
+						</div>
+					</td>
+					<td data-title="'Анкор'" sortable="'anchor'">
+						<div class="long-text long-text--xs">[[ row.anchor ]]</div>
+					</td>
+					<td data-title="'Код'" sortable="'statusCode'">
+						[[ row.statusCode ]]
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+<script type="text/ng-template" id="backlinksTable">
+	<div class="table-responsive">
+		<table class="table-newlinks table-hover" ng-table="tableParams">
+			<tbody>
+				<tr ng-repeat="row in $data">
+					<td data-title="'Ссылка'" sortable="'domainFrom'" width="35%">
+						<div class="long-text">
+							<a href="http://[[ row.domainFrom ]]" target="_blank">[[ row.domainFrom ]]</a>
+						</div>
+					</td>
+					<td data-title="'Анкор'" sortable="'linkText'" width="35%">
+						<div class="long-text">[[ row.linkText ]]</div>
+					</td>
+					<td data-title="'Качество'" sortable="'linkRank'" width="150">
+						<div class="progress" ng-if="!row.noindex && !row.nofollow">
+							<div class="progress-bar"
+								ng-style="{ width: 100 * row.linkRank / 5 + '%'}"
+							></div>
+						</div>
+						<div
+							class="progress" ng-if="row.noindex || row.nofollow"
+							tooltip="
+								[[ row.noindex ? 'noindex' : '' ]]
+								[[ row.noindex && row.nofollow ? ' + ' : '' ]]
+								[[ row.nofollow ? 'nofollow' : '' ]]
+							"
+						>
+							<div class="progress-bar progress-bar-danger"
+								ng-style="{ width: 100 * row.linkRank / 5 + '%'}"
+							></div>
+						</div>
+					</td>
+					<td data-title="'Найдена'" sortable="'add'" width="100">
+						[[ row.add|date:'shortDate' ]]
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+<script type="text/ng-template" id="keywordsGaTable">
+	<div class="table-responsive">
+		<table class="table-clear table-hover" ng-table="tableParams">
+			<tbody>
+			<tr ng-repeat="row in $data">
+				<td data-title="'Ключевое слово'" sortable="'keyword'">
+					<div class="long-text">[[ row.keyword ]]</div>
+				</td>
+				<td data-title="'Посещения'" sortable="'visits'">
+					[[ row.visits ]]
+				</td>
+				<td data-title="'Процент отказов'" sortable="'bounceRate'">
+					[[ row.bounceRate ]]
+				</td>
+				<td data-title="'Глубина просмотра'" sortable="'viewDepths'">
+					[[ row.viewDepths ]]
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</script>
+
+
+
+		
+			<footer class="footer-page">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<ul class="footer-page__social">
+								<li>
+									<a href="http://vk.com/prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.facebook.com/prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="http://twitter.com/prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://plus.google.com/+prcyru" target="_blank" rel="nofollow">
+										<svg class="footer-page__svg" viewBox="0 0 32 32" width="32" heigth="32">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/img/social-footer-icons.svg#icon-google"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+
+							<ul class="footer-page__links">
+								<li><a href="/">Анализ сайта</a></li>
+								<li><a href="/prices/">Тарифы и цены</a></li>
+								<li><a href="http://pr-cy.ru/support/">Поддержка</a></li>
+								<li><a href="http://pr-cy.ru/disclaimer/">Соглашение</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-5 col-xs-5">
+							<div class="footer-page__login">
+																	<a href="/signup/logout" class="btn btn-gray"><i class="fa fa-unlock-alt text-white"></i> Выход</a>
+															</div>
+
+							<div class="footer-page__copyright">© PR-CY, <br class="visible-xs-block">2006—2016</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		
+		
+	
+			<script type="text/javascript">
+				var useSsl = 1;
+				var webHost = 'a.pr-cy.ru';
+				var fsHost = 's.pr-cy.ru';
+				var currentLanguage = 'ru';
+				var defaultLanguage = 'ru';
+			</script>
+							<script type="text/javascript" src="/assets/js/main.min.js?1464268404"></script>						<script type="text/javascript" src="/assets/bower_components/angular-i18n/angular-locale_ru-ru.js?1464268404"></script>
+							<!-- Google Tag Manager -->
+				<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5CMQK"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-N5CMQK');</script>
+				<!-- End Google Tag Manager -->
+					
+	<script type="text/javascript" src="/assets/components/jvectormap/jquery-jvectormap-world-mill-ru.js?1464268404"></script>
+</body>
+</html>

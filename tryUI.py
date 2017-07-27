@@ -26,8 +26,7 @@ def indexSite(site, customerEmail, customerFIO):
 		'method': methods[0],
 		'output': 'json',
 		'mode': 'site',
-		'login': 'dmitriy@biksileev.ru',
-		'password': 'NokiaN9777',
+
 		'url': site,
 		'version_id': '1',
 		'target': 'reindex',
@@ -40,8 +39,7 @@ def indexSite(site, customerEmail, customerFIO):
 
 	paramsForGetIndex = {
 		'method': methods[1],
-		'login': 'dmitriy@biksileev.ru',
-		'password': 'NokiaN9777',
+
 		'url': site,
 		'version_id': firstJson['version_id']
 	}
